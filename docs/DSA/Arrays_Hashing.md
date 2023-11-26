@@ -1,7 +1,7 @@
 # Arrays and Hashing
 
 ## 1. Contains Duplicate
-=== "java"
+
 ```java
 class Solution {
 
@@ -19,7 +19,7 @@ class Solution {
 ```
 
 ## 2. Valid Anagram
-=== "java"
+
 ```java
 class Solution {
 
@@ -40,7 +40,7 @@ class Solution {
 }
 ```
 ## 3. Two Sum
-=== "java"
+
 ```java
 class Solution {
 
@@ -64,7 +64,6 @@ class Solution {
 ```
 ## 4. Group Anagrams
 
-=== "java"
 ```java
 class Solution {
 
@@ -86,7 +85,6 @@ class Solution {
 ```
 ## 4. Group Anagrams
 
-=== "java"
 ```java
 class Solution {
 
@@ -108,7 +106,6 @@ class Solution {
 ```
 ## 5. Top K Frequent Elements
 
-=== "java"
 ```java
 class Solution1 {
 
@@ -236,7 +233,6 @@ class Solution3 {
 ```
 ## 6. Product of Array Except Self
 
-=== "java"
 ```java
 //Just store the left and right product (Try doing this with extra space first)
 //This one is constant space because we are returning the array we created
@@ -276,7 +272,6 @@ class Solution {
 ```
 ## 7. Valid Sudoku
 
-=== "java"
 ```java
 class Solution {
 
@@ -355,7 +350,6 @@ class Solution {
 ```
 ## 8. Encode and Decode Strings 
 
-=== "java"
 ```java
 public class Solution {
 
@@ -385,7 +379,6 @@ public class Solution {
 ```
 ## 9. Longest Consecutive Sequence
 
-=== "java"
 ```java
 class Solution {
 
