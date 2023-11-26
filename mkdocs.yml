@@ -45,3 +45,9 @@ markdown_extensions:
   - pymdownx.betterem
   - pymdownx.critic
   - pymdownx.details
+  - pymdownx.highlight:
+      use_pygments: true
+      auto_title: true
+      pygments_lang_class: true
+      linenums_style: pymdownx-inline
+  - pymdownx.superfences
