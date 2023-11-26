@@ -1,4 +1,4 @@
-# Javascript
+# Javascript By FreeCodeCamp
 
 ### Basics of JavaScript
 
