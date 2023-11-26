@@ -36,6 +36,8 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - content.code.copy
+    - content.code.annotate
 markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
