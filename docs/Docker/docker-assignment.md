@@ -12,7 +12,8 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
 `ubuntu@ubuntu-VM:~$ docker search ubuntu`
 
-```NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+```
+NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
 ubuntu                           Ubuntu is a Debian-based Linux operating sys…   16508     [OK]
 websphere-liberty                WebSphere Liberty multi-architecture images …   297       [OK]
 open-liberty                     Open Liberty multi-architecture images based…   62        [OK]
@@ -24,13 +25,15 @@ ubuntu-upstart                   DEPRECATED, as is Upstart (find other proces…
 
 `ubuntu@ubuntu-VM:~$ docker search ubuntu/nginx`
 
-```NAME           DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+```
+NAME           DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
 ubuntu/nginx   Nginx, a high-performance reverse proxy & we…   102           
 ```
 
 `ubuntu@ubuntu-VM:~$ docker search nginx`
 
-```NAME                               DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+```
+NAME                               DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
 nginx                              Official build of Nginx.                        19145     [OK]
 ```
 
@@ -59,13 +62,15 @@ See 'docker run --help'.
 
 `ubuntu@ubuntu-VM:~$ docker build pikaso`
 
-```[+] Building 0.0s (0/0)
+```
+[+] Building 0.0s (0/0)
 ERROR: unable to prepare context: path "pikaso" not found
 ```
 
 `ubuntu@ubuntu-VM:~$ docker ps -al`
 
-```CONTAINER ID   IMAGE     COMMAND       CREATED       STATUS                   PORTS     NAMES
+```
+CONTAINER ID   IMAGE     COMMAND       CREATED       STATUS                   PORTS     NAMES
 b406446b3169   ubuntu    "/bin/bash"   9 hours ago   Exited (0) 9 hours ago             24octparas
 ```
 
@@ -77,17 +82,18 @@ Error response from daemon: No such image: b406446b3169:latest
 
 `ubuntu@ubuntu-VM:~$ docker images`
 
-```REPOSITORY                  TAG       IMAGE ID       CREATED        SIZE
+```
+REPOSITORY                  TAG       IMAGE ID       CREATED        SIZE
 paraspandey04/24octubuntu   latest    c1f1586671ba   9 hours ago    77.8MB
 paraspandey04/23octubuntu   latest    aa26ae99eab8   9 hours ago    77.8MB
 ubuntu                      latest    e4c58958181a   2 weeks ago    77.8MB
 kicbase/stable              v0.0.37   01c0ce65fff7   9 months ago   1.15GB
 ```
 
-`ubuntu@ubuntu-VM:~$ docker rmi --force c1f1586671ba
-`
+`ubuntu@ubuntu-VM:~$ docker rmi --force c1f1586671ba`
 
-```Untagged: paraspandey04/24octubuntu:latest
+```
+Untagged: paraspandey04/24octubuntu:latest
 Untagged: paraspandey04/24octubuntu@sha256:806789d07b9750f11b5b1e1138a7f740881054f14e7231b55c759415795704b2
 Deleted: sha256:c1f1586671ba03d47b2a3e774aa5afa8ea2fe1a6748eaf653d31c959fc217792
 Deleted: sha256:ff64dfdf6ce97f06c2006f6f72277f49c6f100794e13f2ecaf6bf486054c4340
@@ -95,7 +101,8 @@ Deleted: sha256:ff64dfdf6ce97f06c2006f6f72277f49c6f100794e13f2ecaf6bf486054c4340
 
 `ubuntu@ubuntu-VM:~$ docker images`
 
-```REPOSITORY                  TAG       IMAGE ID       CREATED        SIZE
+```
+REPOSITORY                  TAG       IMAGE ID       CREATED        SIZE
 paraspandey04/23octubuntu   latest    aa26ae99eab8   9 hours ago    77.8MB
 ubuntu                      latest    e4c58958181a   2 weeks ago    77.8MB
 kicbase/stable              v0.0.37   01c0ce65fff7   9 months ago   1.15GB
@@ -117,7 +124,8 @@ Options:
 
 `ubuntu@ubuntu-VM:~$ docker run -it --name 25octparas ubuntu /bin/bash`
 
-```root@7a55807663ee:/# ls
+```
+root@7a55807663ee:/# ls
 
 bin   dev  home  lib32  libx32  mnt  proc  run   srv  tmp  var
 boot  etc  lib   lib64  media   opt  root  sbin  sys  usr
@@ -149,7 +157,8 @@ sha256:1d9bde2b7a478bf51806db30732b9cbd43532468dc0e0d77b33c49ebfe307cda
 
 `ubuntu@ubuntu-VM:~$ docker images`
 
-```REPOSITORY                  TAG       IMAGE ID       CREATED         SIZE
+```
+REPOSITORY                  TAG       IMAGE ID       CREATED         SIZE
 paraspandey04/25octubuntu   latest    1d9bde2b7a47   7 seconds ago   123MB
 paraspandey04/23octubuntu   latest    aa26ae99eab8   10 hours ago    77.8MB
 ubuntu                      latest    e4c58958181a   2 weeks ago     77.8MB
@@ -167,8 +176,7 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 Login Succeeded
 ```
 
-`ubuntu@ubuntu-VM:~$ docker push paraspandey04/25octunutu
-`
+`ubuntu@ubuntu-VM:~$ docker push paraspandey04/25octunutu`
 
 ```
 Using default tag: latest
@@ -199,7 +207,6 @@ kicbase/stable              v0.0.37   01c0ce65fff7   9 months ago   1.15GB
 `ubuntu@ubuntu-VM:~$ docker rmi --force c1f1586671ba`
 
 ```
-
 Untagged: paraspandey04/24octubuntu:latest
 Untagged: paraspandey04/24octubuntu@sha256:806789d07b9750f11b5b1e1138a7f740881054f14e7231b55c759415795704b2
 Deleted: sha256:c1f1586671ba03d47b2a3e774aa5afa8ea2fe1a6748eaf653d31c959fc217792
@@ -279,7 +286,8 @@ paraspandey04/25octubuntu --format 'json'`
 
 `ubuntu@ubuntu-VM:~$ docker search paraspandey04/25octubuntu`
 
-```NAME                        DESCRIPTION   STARS     OFFICIAL   AUTOMATED
+```
+NAME                        DESCRIPTION   STARS     OFFICIAL   AUTOMATED
 paraspandey04/25octubuntu 
 ```
 
