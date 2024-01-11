@@ -1,4 +1,4 @@
-# Kubernetes Day 5
+# Kubernetes Day 6
 
 `ubuntu@ubuntu-VM:~$ kubectl get ns`
 
