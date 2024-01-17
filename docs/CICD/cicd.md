@@ -127,14 +127,14 @@ def dockerLoginAndPush(imageName) {
 ## RUN Build pipeline
 
 
-> Maintain following tree in git repository:
-> frontend
+`Maintain following tree in git repository:`
+ frontend
     ├── Dockerfile
     └── ui
-> backend
+backend
     ├── Dockerfile
     └── jttours-0.0.1-SNAPSHOT.jar
->kubernetes
+kubernetes
     ├── backend
     │   ├── backend-configmap.yaml
     │   ├── backend-deployment.yaml
