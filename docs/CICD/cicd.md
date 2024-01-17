@@ -128,6 +128,7 @@ def dockerLoginAndPush(imageName) {
 
 
 `Maintain following tree in git repository:`
+```bash
  frontend
     ├── Dockerfile
     └── ui
@@ -151,7 +152,7 @@ kubernetes
     │   ├── mysql-service.yaml
     │   └── mysql-statefulset.yaml
     └── namespace.yaml
-
+```
 `frontend/Dockerfile`
 ```Dockerfile
 FROM ubuntu:latest
