@@ -195,7 +195,7 @@ ENTRYPOINT ["java","-jar","/jttours-0.0.1-SNAPSHOT.jar"]
 ```
 `sh`
 ```bash
-oc delete ns jttours
+#!/bin/bash
 oc create ns jttours
 
 # For MySQL Database
