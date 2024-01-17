@@ -10,31 +10,29 @@ RUN apt-get -y install curl gnupg
 RUN curl -sL https://deb.nodesource.com/setup_14.x  | bash -
 RUN apt-get -y install nodejs
 
-# Copy only the necessary files and directories
 COPY ./ui /home/ui
-# Switch to the UI directory
+
 WORKDIR /home/ui
-# Create a non-root user and group, set proper permissions for the working directory
+
 RUN useradd ui
 
 RUN chmod -R ugoa+rwx /home/ui && chown -R ui:0 /home/ui
-# Use a separate user for running the application
+
 USER ui
 
-# Expose the application port
 EXPOSE 3000
 
-# Install npm dependencies
 RUN npm install
 RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
-# Specify the default command to run the application
-CMD ["npm", "start"]
+
+CMD npm run build && npx serve -s build
+#CMD ["npm", "start"]
 ```
 ```bash
 docker build -t rahul1181/frontend-image:1.16 . 
 docker push rahul1181/frontend-image:1.16
 ```
-> make sure to create .env file in ui containing url of pointing backend
+> make sure to create .env, .env.development, .env.production files in ui. So that env in deployment file will point to .env.production
 
 **`Backend Dockerfile`**
 ```Dockerfile
