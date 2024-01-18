@@ -1,4 +1,4 @@
-# Rest Api
+# Rest API
 ## Tour Batch
 - (GET)getBatches
 `localhost:8080/batches`
