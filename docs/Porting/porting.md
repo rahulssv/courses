@@ -18,6 +18,7 @@ docker run -it --name cordova-plugin-firebase registry.access.redhat.com/ubi8/ub
 
 ```
 ## Porting
+[Build-Scripts](https://github.com/ppc64le/build-scripts.git)
 ### loopback-connector
 ```sh
 #!/bin/bash -e
