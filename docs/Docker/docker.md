@@ -737,7 +737,7 @@ docker swarm leave
 
     
     Dockerfile
-    ```Dockerfile
+
     # Start from scratch (empty base image)
     FROM scratch
     
@@ -750,7 +750,5 @@ docker swarm leave
     
     # Set the default command to run your application
     CMD ["/node-v14.17.5-linux-x64/bin/node", "/app.js"]
-    
-    ```
 
     We need to manually download the Node.js and npm binaries for the desired version from the official Node.js website 
