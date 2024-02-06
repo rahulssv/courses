@@ -2,61 +2,61 @@
 ## 1
 `toString() and getClass() - Illustration`
 
-The toString() method returns a textual representation of an object. A basic implementation is already included in java.lang.Object and so because all objects inherit from java.lang.Object it is guaranteed that every object in Java has this method. Overriding the method is always a good idea.
+    The toString() method returns a textual representation of an object. A basic implementation is already included in java.lang.Object and so because all objects inherit from java.lang.Object it is guaranteed that every object in Java has this method. Overriding the method is always a good idea.
 
-getClass() method defined in the Object class returns the class Type of an object. getClass() method cannot be overridden.
+    getClass() method defined in the Object class returns the class Type of an object. getClass() method cannot be overridden.
 
- 
+    
 
-Create a class named Product with the following private member variables.
+    Create a class named Product with the following private member variables.
 
-id of type Long
+    id of type Long
 
-productName of type String
+    productName of type String
 
-supplierName of type String
+    supplierName of type String
 
-Include appropriate getters and setters.
+    Include appropriate getters and setters.
 
-Include a 3-argument constructor and a default constructor.
+    Include a 3-argument constructor and a default constructor.
 
- 
+    
 
-Override the toString() method defined in the Object class. Display the details of the product in this method as shown in the sample output.
+    Override the toString() method defined in the Object class. Display the details of the product in this method as shown in the sample output.
 
- 
+    
 
-Create another class and write a main method to test the above class. Invoke the getClass() method from main.
+    Create another class and write a main method to test the above class. Invoke the getClass() method from main.
 
- 
+    
 
-Input and Output Format:
+    Input and Output Format:
 
- 
+    
 
-Refer sample input and output for formatting specifications.
+    Refer sample input and output for formatting specifications.
 
-All text in bold corresponds to input and the rest corresponds to output.
+    All text in bold corresponds to input and the rest corresponds to output.
 
- 
+    
 
-Sample Input and Output :
+    Sample Input and Output :
 
-Enter the product id
+    Enter the product id
 
-1
+    1
 
-Enter the product name
+    Enter the product name
 
-Printer
+    Printer
 
-Enter the supplier name
+    Enter the supplier name
 
-HP
+    HP
 
-1 : Printer : HP
+    1 : Printer : HP
 
-Invoking getClass() method : class Product
+    Invoking getClass() method : class Product
 
 ```java title="Main.java"
 import java.util.*;
@@ -103,76 +103,76 @@ public class Product {
 ### 1
 `Clone Method`
 
-One method to quickly copy the primitive data members of an object is by invoking the clone method. The clone method allocates new memory for all primitive data types, but maintains the same reference to members representing it as objects of other classes. Lets try a very simple clone invocation for a customer object.
+    One method to quickly copy the primitive data members of an object is by invoking the clone method. The clone method allocates new memory for all primitive data types, but maintains the same reference to members representing it as objects of other classes. Lets try a very simple clone invocation for a customer object.
 
-Write a program to get the Customer name, id , country and complaint from the user. If the name entered is an empty string, it is assumed that the complaint is raised by the previous customer. In such cases omit the customer's id and country, use the "clone()" method to create a copy of the previous customer object and get the complaint from the user.
+    Write a program to get the Customer name, id , country and complaint from the user. If the name entered is an empty string, it is assumed that the complaint is raised by the previous customer. In such cases omit the customer's id and country, use the "clone()" method to create a copy of the previous customer object and get the complaint from the user.
 
-Cretate a class called Customer with the following member variables
-Data Type	Variable Name
-String	name
-String	id
-String	country
-Include a default constructor.
-Include a 3 argument constructor.
-1st argument name
-2nd argument id
-3rd argument country
+    Cretate a class called Customer with the following member variables
+    Data Type	Variable Name
+    String	name
+    String	id
+    String	country
+    Include a default constructor.
+    Include a 3 argument constructor.
+    1st argument name
+    2nd argument id
+    3rd argument country
 
 
-Create a class called Complaint with the following member variables
-Data Type	Variable Name
-String	complaint
-Customer	customer
+    Create a class called Complaint with the following member variables
+    Data Type	Variable Name
+    String	complaint
+    Customer	customer
 
-Methods in Complaint class
-Method Name	Return Type	Function
-display()	void	display the complaint detail
-Include a default constructor.
-Include a 2 argument constructor.
-1st argument complaint
-2nd argument customer
- 
- 
-Note :
-Strictly adhere to the object oriented specifications given as a part of the problem statement.
-Use the same class names and member variable names.
+    Methods in Complaint class
+    Method Name	Return Type	Function
+    display()	void	display the complaint detail
+    Include a default constructor.
+    Include a 2 argument constructor.
+    1st argument complaint
+    2nd argument customer
+    
+    
+    Note :
+    Strictly adhere to the object oriented specifications given as a part of the problem statement.
+    Use the same class names and member variable names.
 
-Assume: that the Maximum number of complaints as 100.
+    Assume: that the Maximum number of complaints as 100.
 
-Sample Input and Output :
+    Sample Input and Output :
 
-Enter the customer name
-Hubbib
-Enter the id
-006
-Enter the country
-AF
-Enter the complaint
-Late service
-Add another complaint ??
-yes
-Enter the customer name
-Abin
-Enter the id
-080
-Enter the country
-KLN
-Enter the complaint
-Improper response
-Add another complaint ??
-yes
-Enter the customer name
+    Enter the customer name
+    Hubbib
+    Enter the id
+    006
+    Enter the country
+    AF
+    Enter the complaint
+    Late service
+    Add another complaint ??
+    yes
+    Enter the customer name
+    Abin
+    Enter the id
+    080
+    Enter the country
+    KLN
+    Enter the complaint
+    Improper response
+    Add another complaint ??
+    yes
+    Enter the customer name
 
-Same customer
-Enter the complaint
-Bad Quality
-Add another complaint ??
-no
+    Same customer
+    Enter the complaint
+    Bad Quality
+    Add another complaint ??
+    no
 
-Complaint Details
-Name : Hubbib ID : 006 Country : AF Complaint : Late service
-Name : Abin ID : 080 Country : KLN Complaint : Improper response
-Name : Abin ID : 080 Country : KLN Complaint : Bad Quality
+    Complaint Details
+    Name : Hubbib ID : 006 Country : AF Complaint : Late service
+    Name : Abin ID : 080 Country : KLN Complaint : Improper response
+    Name : Abin ID : 080 Country : KLN Complaint : Bad Quality
 
 
 ```java title="Main.java"

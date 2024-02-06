@@ -1,37 +1,37 @@
 # JS-Fundamentals
 ## iDesign
-Eligible Voter
+    Eligible Voter
 
-A voting age is a minimum age established by law that a person must attain before they become eligible to vote in public election. Allow the person if his/her age is greater than or equal to 18 using function.
+    A voting age is a minimum age established by law that a person must attain before they become eligible to vote in public election. Allow the person if his/her age is greater than or equal to 18 using function.
 
-Problem Description:
-1) Read input file ‘input.txt’.
-2) Check the constraint inside the function checkAge().
-3) Display the message for the voters based on the constraint.
+    Problem Description:
+    1) Read input file ‘input.txt’.
+    2) Check the constraint inside the function checkAge().
+    3) Display the message for the voters based on the constraint.
 
 
-Input and Output Format:
+    Input and Output Format:
 
-Refer to sample input and output.
+    Refer to sample input and output.
 
-Input is the age of the person.
+    Input is the age of the person.
 
-Output is the message for voters.(Allowed/Not Allowed)
+    Output is the message for voters.(Allowed/Not Allowed)
 
-Input:
+    Input:
 
-25
+    25
 
-Output:
+    Output:
 
-Allowed
+    Allowed
 
-Input:
+    Input:
 
-7
+    7
 
-Output:
-Not Allowed
+    Output:
+    Not Allowed
 ```js title="app.js"
 var fs = require('fs');
 var input = fs.readFileSync('input.txt').toString();
@@ -54,37 +54,37 @@ return true;
 ```
 ## iAssess
 ### 1
-String Palindrome
+    String Palindrome
 
-Write a JavaScript console program to read the input file and check whether the given string is palindrome or not.
+    Write a JavaScript console program to read the input file and check whether the given string is palindrome or not.
 
-Input and Output Format:
+    Input and Output Format:
 
-Refer sample input and output for formatting specifications.
+    Refer sample input and output for formatting specifications.
 
-Input is a string.
+    Input is a string.
 
-Output displays whether the given string is palindrome or not. (case insensitive)
+    Output displays whether the given string is palindrome or not. (case insensitive)
 
-Note: Input should be read from input.txt
+    Note: Input should be read from input.txt
 
-The spaces should be removed before checking.
+    The spaces should be removed before checking.
 
-Input 1:
+    Input 1:
 
-Taco cat
+    Taco cat
 
-Output 1:
+    Output 1:
 
-Taco cat is a palindrome
+    Taco cat is a palindrome
 
-Input 2:
+    Input 2:
 
-A gross creature
+    A gross creature
 
-Output 2:
+    Output 2:
 
-A gross creature is not a palindrome
+    A gross creature is not a palindrome
 ```js title="app.js"
 var fs = require('fs');
 var input1 = fs.readFileSync('input.txt').toString();
@@ -107,23 +107,23 @@ console.log(value)
 Taco cat
 ```
 ### 2
-Find Factorial
+    Find Factorial
 
-Write a program using the Arrow function to find the factorial of a given number.
+    Write a program using the Arrow function to find the factorial of a given number.
 
-Input and Output :
+    Input and Output :
 
-Below input is the format of the file input.txt.
-Input consists of an integer.
-Output is an integer.
+    Below input is the format of the file input.txt.
+    Input consists of an integer.
+    Output is an integer.
 
-Sample Input :
+    Sample Input :
 
-5
+    5
 
-Sample Output :
+    Sample Output :
 
-120
+    120
 ```js title="app.js"
 var fs=require('fs');
 var input=fs.readFileSync('input.txt').toString().trim();
@@ -141,5 +141,4 @@ var value=(input)=>{
 console.log(value(input))
 
 ```
-```txt title="input.txt"
-```
+

@@ -1,44 +1,44 @@
 # Object Oriented Concepts
 ## iDesign
 ### 1
-Check Name Length using ES5
+    Check Name Length using ES5
 
-Check the given user name length using Javascript class using ES5.
+    Check the given user name length using Javascript class using ES5.
 
-Problem Description:
-1) Read input file ‘input.txt’
-2) Create class named as User.
-3) Inside the class create the argument as user name.
-4) Now create getter for name.
-5) Create the function checkNameLength() inside the class.
-6) Inside the function check the length of the user name.
-7) If the user name length is greater than 4 then, print the name as it is. Else print the message ‘Name is too short’.
-6) Create object for the class using new Classname() and pass the input to the constructor.
-7) And call the object method, using object.methodName() to print the output.
+    Problem Description:
+    1) Read input file ‘input.txt’
+    2) Create class named as User.
+    3) Inside the class create the argument as user name.
+    4) Now create getter for name.
+    5) Create the function checkNameLength() inside the class.
+    6) Inside the function check the length of the user name.
+    7) If the user name length is greater than 4 then, print the name as it is. Else print the message ‘Name is too short’.
+    6) Create object for the class using new Classname() and pass the input to the constructor.
+    7) And call the object method, using object.methodName() to print the output.
 
-Input and Output Format:
+    Input and Output Format:
 
-Refer to sample input and output.
+    Refer to sample input and output.
 
-Input is user name.
+    Input is user name.
 
-Output is user name.(If the length is greater than 4), Else  ‘Name is too short’.
+    Output is user name.(If the length is greater than 4), Else  ‘Name is too short’.
 
-Input:
+    Input:
 
-Harina
+    Harina
 
-Output:
+    Output:
 
-Harina
+    Harina
 
-Input:
+    Input:
 
-Jim
+    Jim
 
-Output:
+    Output:
 
-Name is too short
+    Name is too short
 ```js title="app.js"
 var fs = require('fs');
 var input=fs.readFileSync('input.txt').toString().trim().split('\n');
@@ -69,48 +69,48 @@ user.checkNameLength();
 Harina
 ```
 ### 2
-Prime or Composite using ES6
+    Prime or Composite using ES6
 
-Write a program to check the given number is prime or composite.
+    Write a program to check the given number is prime or composite.
 
-Problem Description:
-1) Read a number from file ‘input.txt’
-2) In display.js check and print, the given number is prime or composite.
-3) In display.js exports the function/class name.  ( Example : exports.className = className; )
-4) In app.js import the function/class name. ( Example: {className} = require(‘file path'); )
-5) From app.js call the function/class to print the message.
+    Problem Description:
+    1) Read a number from file ‘input.txt’
+    2) In display.js check and print, the given number is prime or composite.
+    3) In display.js exports the function/class name.  ( Example : exports.className = className; )
+    4) In app.js import the function/class name. ( Example: {className} = require(‘file path'); )
+    5) From app.js call the function/class to print the message.
 
-Input and Output Format:
+    Input and Output Format:
 
-Refer to sample input and output.
+    Refer to sample input and output.
 
-Input is a number.
+    Input is a number.
 
-The output is the statement.
+    The output is the statement.
 
-Input:
+    Input:
 
-23
+    23
 
-Output:
+    Output:
 
-Prime Number
+    Prime Number
 
-Input:
+    Input:
 
-26
+    26
 
-Output:
+    Output:
 
-Composite Number
+    Composite Number
 
-Input:
+    Input:
 
-1
+    1
 
-Output:
+    Output:
 
-Neither Prime nor Composite
+    Neither Prime nor Composite
 ```js title="app.js"
 
 //fill your code
@@ -141,35 +141,35 @@ exports.value=value
 ```
 ## iAssess
 ### 1
-Print Employee Details using ES5
+    Print Employee Details using ES5
 
-Print employee details using javascript class using ES5.
+    Print employee details using javascript class using ES5.
 
-Problem Description:
-1) Read input file ‘input.txt’
-2) Create a class named as Employee.
-3) Inside the class create arguments employee name,dept and DOJ.
-4) Now create the method as displayEmployee() and inside the method print the employee details.
-5) Create object for the class using new Classname() and pass the input to the constructor.
-6) And call the object method, using object.methodName() to print the employee details.
+    Problem Description:
+    1) Read input file ‘input.txt’
+    2) Create a class named as Employee.
+    3) Inside the class create arguments employee name,dept and DOJ.
+    4) Now create the method as displayEmployee() and inside the method print the employee details.
+    5) Create object for the class using new Classname() and pass the input to the constructor.
+    6) And call the object method, using object.methodName() to print the employee details.
 
-Input and Output Format:
+    Input and Output Format:
 
-Refer to sample input and output.
+    Refer to sample input and output.
 
-Input and output is employee details.
+    Input and output is employee details.
 
-Input:
+    Input:
 
-John
-HR
-23-8-1997
+    John
+    HR
+    23-8-1997
 
-Output:
+    Output:
 
-Name : John
-Department : HR
-DOJ : 23-8-1997
+    Name : John
+    Department : HR
+    DOJ : 23-8-1997
 ```js title="app.js"
 var fs = require('fs');
 var input=fs.readFileSync('input.txt').toString().trim().split('\n');
@@ -199,54 +199,54 @@ HR
 23-8-1997
 ```
 ### 2
-Area and Perimeter using ES6
+    Area and Perimeter using ES6
 
-Write a program to find the area and perimeter of extended classes from the parent class.
+    Write a program to find the area and perimeter of extended classes from the parent class.
 
-Problem Description :
+    Problem Description :
 
-1) Read input file ‘input.txt’
-2) Create a class named as Shape using the keyword class.
-3) Inside the class create constructor with argument name.
-3) Create a method calculatePerimeter() and calculateArea in the parent class Shape.
-4) Create three child classes Circle, Square, and Triangle.
-5) Each class should have a constructor which invokes name from the parent class:
-    Constructor of Circle should have arguments for name and radius
-    Constructor of Square should have arguments for name and side
-    Constructor of Triangle should have arguments for name, side1, side2, side3, side4, base and height.
-6) Create methods in each class to display the measurements.    
+    1) Read input file ‘input.txt’
+    2) Create a class named as Shape using the keyword class.
+    3) Inside the class create constructor with argument name.
+    3) Create a method calculatePerimeter() and calculateArea in the parent class Shape.
+    4) Create three child classes Circle, Square, and Triangle.
+    5) Each class should have a constructor which invokes name from the parent class:
+        Constructor of Circle should have arguments for name and radius
+        Constructor of Square should have arguments for name and side
+        Constructor of Triangle should have arguments for name, side1, side2, side3, side4, base and height.
+    6) Create methods in each class to display the measurements.    
 
-    displayCircleMeasurments() in class Circle
-    displaySquareMeasurments() in class Square
-    displayTriangleMeasurments() in class Triangle
-7) Each display method should invoke the methods in the parent class
+        displayCircleMeasurments() in class Circle
+        displaySquareMeasurments() in class Square
+        displayTriangleMeasurments() in class Triangle
+    7) Each display method should invoke the methods in the parent class
 
-    calculateArea()
-    calculatePerimeter()
-Note :
+        calculateArea()
+        calculatePerimeter()
+    Note :
 
-calculateArea() and calculatePerimeter() are the methods written inside Parent class Shape. It should be invoked from the child classes with the super keyword.
+    calculateArea() and calculatePerimeter() are the methods written inside Parent class Shape. It should be invoked from the child classes with the super keyword.
 
-Input and Output Format :
+    Input and Output Format :
 
-Refer to sample input and output.
-Input consists of n lines. Each line consists of a comma-separated values of the name of the shape and required sides of the corresponding shape
-Output should display the calculated area and perimeter of all the three shapes.
+    Refer to sample input and output.
+    Input consists of n lines. Each line consists of a comma-separated values of the name of the shape and required sides of the corresponding shape
+    Output should display the calculated area and perimeter of all the three shapes.
 
-Sample Input :
+    Sample Input :
 
-Circle,11
-Square,4
-Triangle,3,4,5,4,6    
+    Circle,11
+    Square,4
+    Triangle,3,4,5,4,6    
 
-Sample Output :
+    Sample Output :
 
-Perimeter of a Circle: 69.08
-Area of a Circle: 379.94
-Perimeter of a Square: 16
-Area of a Square: 16
-Perimeter of a Triangle: 12
-Area of a Triangle: 12
+    Perimeter of a Circle: 69.08
+    Area of a Circle: 379.94
+    Perimeter of a Square: 16
+    Area of a Square: 16
+    Perimeter of a Triangle: 12
+    Area of a Triangle: 12
 
 
 ```js title="app.js"

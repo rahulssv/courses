@@ -1,34 +1,34 @@
 # Object Oriented Programming
 ## 1
-The class Department has been created with the following attributes,
-Attribute	Datatype
-departmentName	String
-staff	Staff
+    The class Department has been created with the following attributes,
+    Attribute	Datatype
+    departmentName	String
+    staff	Staff
 
-The class Staff has been created with the following attributes,
-Attribute 	Datatype
-staffName	String
-designation	String
+    The class Staff has been created with the following attributes,
+    Attribute 	Datatype
+    staffName	String
+    designation	String
 
-Include the following method in the Department class,
-Method 	Description
-public displayStaff()	This method displays "staffName is working in the departmentName department as designation".
+    Include the following method in the Department class,
+    Method 	Description
+    public displayStaff()	This method displays "staffName is working in the departmentName department as designation".
 
-Create a driver class Main, in the main method get the inputs from user, create the objects and call the methods.
+    Create a driver class Main, in the main method get the inputs from user, create the objects and call the methods.
 
-Input and Output format:
-Refer to sample Input and Output for formatting specifications.
+    Input and Output format:
+    Refer to sample Input and Output for formatting specifications.
 
-Sample Input and Output:
-[All text in bold corresponds to the input and rest corresponds to the output]
+    Sample Input and Output:
+    [All text in bold corresponds to the input and rest corresponds to the output]
 
-Enter the name of the staff:
-Jane
-Enter the staff designation:
-Associate Professor
-Enter the department name:
-Physics
-Jane is working in the Physics department as Associate Professor
+    Enter the name of the staff:
+    Jane
+    Enter the staff designation:
+    Associate Professor
+    Enter the department name:
+    Physics
+    Jane is working in the Physics department as Associate Professor
 ```java title="Main.java"
 import java.util.*;
 public class Main {
@@ -69,92 +69,92 @@ public class Department {
 }
 ```
 ## 2
-Bank Account
-Inheritance in Java is same as that of inheritance in real Life. A class which inherits another class obtains all the latter's attributes and methods. The former is called Child class whilst the latter is called Parent class. This phenomenon would be very promising in applications dealing with multiple classes that are constituted by similar or more likely same attributes. You 'll get to know the importance of inheritance from the following problem. All type of accounts in a bank have common attributes which can be inherited from an Account class.
+    Bank Account
+    Inheritance in Java is same as that of inheritance in real Life. A class which inherits another class obtains all the latter's attributes and methods. The former is called Child class whilst the latter is called Parent class. This phenomenon would be very promising in applications dealing with multiple classes that are constituted by similar or more likely same attributes. You 'll get to know the importance of inheritance from the following problem. All type of accounts in a bank have common attributes which can be inherited from an Account class.
 
-The class Account has been created with the following protected attributes,
+    The class Account has been created with the following protected attributes,
 
-Attributes	Datatype
-accName	String
-accNo	String
-bankName	String
-Include appropriate getters and setters.
-
-
-Include the following protected methods.
-
-Method	Description
-public void display()	This protected method displays the account details
- 
-
-Create a class CurrentAccount with following private attributes which extends Account class
-
-Attributes	Datatype
-tinNumber	String
-Create default constructor and a parameterized constructor with arguments in order CurrentAccount(String accName,String accNo,String bankName,String tinNumber).
-Include appropriate getters and setters.
+    Attributes	Datatype
+    accName	String
+    accNo	String
+    bankName	String
+    Include appropriate getters and setters.
 
 
-Include the following public methods.
+    Include the following protected methods.
 
-Method	Description
-public void display()	This method calls the super class display().
-This public method displays the TIN number.
-Call this method with the reference of base class.
- 
+    Method	Description
+    public void display()	This protected method displays the account details
+    
 
-Create a class SavingsAccount with following private attributes which extends Account class
+    Create a class CurrentAccount with following private attributes which extends Account class
 
-Attributes	Datatype
-orgName	String
-Create default constructor and a parameterized constructor with arguments in order SavingsAccount(String accName,String accNo,String bankName,String orgName).
-Include appropriate getters and setters.
+    Attributes	Datatype
+    tinNumber	String
+    Create default constructor and a parameterized constructor with arguments in order CurrentAccount(String accName,String accNo,String bankName,String tinNumber).
+    Include appropriate getters and setters.
 
 
-Include the following public methods.
+    Include the following public methods.
 
-Method	Description
-public void display()	This method calls the super class display().
-This public method displays the Organisation Name.
-Call this method with the reference of base class.
- 
+    Method	Description
+    public void display()	This method calls the super class display().
+    This public method displays the TIN number.
+    Call this method with the reference of base class.
+    
 
-Create a driver class named Main to test the above class.
+    Create a class SavingsAccount with following private attributes which extends Account class
 
-Note:
-  Strictly adhere to the Object-Oriented Specifications given in the problem statement.All class names, attribute names and method names should be the same as specified in the problem statement.
+    Attributes	Datatype
+    orgName	String
+    Create default constructor and a parameterized constructor with arguments in order SavingsAccount(String accName,String accNo,String bankName,String orgName).
+    Include appropriate getters and setters.
 
-Input Format:
-The first input corresponds to choose current or savings account
-The next line consists of account name,account number,bank name,org name or tin number (according to chosen account type)
 
-Output Format
-The output consists of account details  and TIN number or Organisation name
-Refer sample output for formatting specifications.
+    Include the following public methods.
 
-Sample Input/Output-1:
-Choose Account Type
-1.Savings Account
-2.Current Account
-1
-Enter Account details in comma separated(Account Name,Account Number,Bank Name,Organisation Name)
-Morsh,033808020000879,Baroda,Amphisoft
-Account Name:Morsh
-Account Number:033808020000879
-Bank Name:Baroda
-Organisation Name:Amphisoft
+    Method	Description
+    public void display()	This method calls the super class display().
+    This public method displays the Organisation Name.
+    Call this method with the reference of base class.
+    
 
-Sample Input/Output-2:
-Choose Account Type
-1.Savings Account
-2.Current Account
-2
-Enter Account details in comma separated(Account Name,Account Number,Bank Name,TIN Number)
-Krish,131231451,ICICI,798902
-Account Name:Krish
-Account Number:131231451
-Bank Name:ICICI
-TIN Number:798902
+    Create a driver class named Main to test the above class.
+
+    Note:
+    Strictly adhere to the Object-Oriented Specifications given in the problem statement.All class names, attribute names and method names should be the same as specified in the problem statement.
+
+    Input Format:
+    The first input corresponds to choose current or savings account
+    The next line consists of account name,account number,bank name,org name or tin number (according to chosen account type)
+
+    Output Format
+    The output consists of account details  and TIN number or Organisation name
+    Refer sample output for formatting specifications.
+
+    Sample Input/Output-1:
+    Choose Account Type
+    1.Savings Account
+    2.Current Account
+    1
+    Enter Account details in comma separated(Account Name,Account Number,Bank Name,Organisation Name)
+    Morsh,033808020000879,Baroda,Amphisoft
+    Account Name:Morsh
+    Account Number:033808020000879
+    Bank Name:Baroda
+    Organisation Name:Amphisoft
+
+    Sample Input/Output-2:
+    Choose Account Type
+    1.Savings Account
+    2.Current Account
+    2
+    Enter Account details in comma separated(Account Name,Account Number,Bank Name,TIN Number)
+    Krish,131231451,ICICI,798902
+    Account Name:Krish
+    Account Number:131231451
+    Bank Name:ICICI
+    TIN Number:798902
 ```java title="Main.java"
 import java.util.*;
 public class Main {
@@ -240,109 +240,109 @@ public class CurrentAccount extends Account {
 
 ```
 ## 3
-Abstract Class - FundTransfer
+    Abstract Class - FundTransfer
 
-Let's try an application like a fund transfer for our larger application. So, in fund transfer, there are 3 types of NEFT/IMPS/RGTS. We can create an abstract class FundTransfer. And extend it in the child classes. Create an abstract method transfer and implement it in all the child classes.
+    Let's try an application like a fund transfer for our larger application. So, in fund transfer, there are 3 types of NEFT/IMPS/RGTS. We can create an abstract class FundTransfer. And extend it in the child classes. Create an abstract method transfer and implement it in all the child classes.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create an abstract class FundTransfer with following private attributes,
+    Create an abstract class FundTransfer with following private attributes,
 
-Attributes	Datatype
-accountNumber	String
-balance	Double
- 
-Include the following methods in the class FundTransfer.
+    Attributes	Datatype
+    accountNumber	String
+    balance	Double
+    
+    Include the following methods in the class FundTransfer.
 
-Method	Description
-Boolean validate(Double transfer)	To check if the accountNumber is 10 digits, the transfer amount is non-negative and less than balance.
-If all cases are satisfied then return true, if not return false
-Boolean transfer(Double transfer)	It is an abstract method with no definition
+    Method	Description
+    Boolean validate(Double transfer)	To check if the accountNumber is 10 digits, the transfer amount is non-negative and less than balance.
+    If all cases are satisfied then return true, if not return false
+    Boolean transfer(Double transfer)	It is an abstract method with no definition
 
-Create a class NEFTTransfer which extends FundTransfer.
+    Create a class NEFTTransfer which extends FundTransfer.
 
-Include the following method in the class NEFTTransfer.
+    Include the following method in the class NEFTTransfer.
 
-Method	Description
-Boolean transfer(Double transfer)	To check whether the transfer amount+5% of the transfer amount is less than balance.
-If then subtracts transfer amount and 5% service charge from balance and return true, if not return false
+    Method	Description
+    Boolean transfer(Double transfer)	To check whether the transfer amount+5% of the transfer amount is less than balance.
+    If then subtracts transfer amount and 5% service charge from balance and return true, if not return false
 
-Create a class IMPSTransfer which extends FundTransfer.
+    Create a class IMPSTransfer which extends FundTransfer.
 
-Include the following method in the class IMPSTransfer.
+    Include the following method in the class IMPSTransfer.
 
-Method	Description
-Boolean transfer(Double transfer)	To check whether transfer amount+2% of transfer amount is less than balance.
-If then subtracts transfer amount and 2% service charge from balance and return true, if not return false.
+    Method	Description
+    Boolean transfer(Double transfer)	To check whether transfer amount+2% of transfer amount is less than balance.
+    If then subtracts transfer amount and 2% service charge from balance and return true, if not return false.
 
-Create a class RTGSTransfer which extends FundTransfer.
+    Create a class RTGSTransfer which extends FundTransfer.
 
-Include the following method in the class RTGSTransfer.
+    Include the following method in the class RTGSTransfer.
 
-Method	Description
-Boolean transfer(Double transfer)	To check whether the transfer amount is greater than Rs.10000.
-If then subtracts transfer amount from balance and return true, if not return false.
- 
-Include appropriate getters/setters, constructors with super() to create objects. Write a driver class Main to test them.
+    Method	Description
+    Boolean transfer(Double transfer)	To check whether the transfer amount is greater than Rs.10000.
+    If then subtracts transfer amount from balance and return true, if not return false.
+    
+    Include appropriate getters/setters, constructors with super() to create objects. Write a driver class Main to test them.
 
-Input format:
-Refer to sample Input and Output for the details and for the formatting specifications.
+    Input format:
+    Refer to sample Input and Output for the details and for the formatting specifications.
 
-Output format:
-Print “Transfer occurred successfully” in the main method. If the transfer function returns true.
-Print "Account number or transfer amount seems to be wrong" in the main method. If validate function returns false.
-Print "Transfer could not be made" in the main method. If the transfer function returns false.
-Refer to sample Input and Output for formatting specifications.
+    Output format:
+    Print “Transfer occurred successfully” in the main method. If the transfer function returns true.
+    Print "Account number or transfer amount seems to be wrong" in the main method. If validate function returns false.
+    Print "Transfer could not be made" in the main method. If the transfer function returns false.
+    Refer to sample Input and Output for formatting specifications.
 
-Note: All Texts in bold corresponds to the input and rest are output
+    Note: All Texts in bold corresponds to the input and rest are output
 
-Sample Input and Output 1:
+    Sample Input and Output 1:
 
-Enter your account number:
-1234567890
-Enter the balance of the account:
-10000
-Enter the type of transfer to be made:
-1.NEFT
-2.IMPS
-3.RTGS
-1
-Enter the amount to be transferred:
-2000
-Transfer occurred successfully
-Remaining balance is 7900.0
+    Enter your account number:
+    1234567890
+    Enter the balance of the account:
+    10000
+    Enter the type of transfer to be made:
+    1.NEFT
+    2.IMPS
+    3.RTGS
+    1
+    Enter the amount to be transferred:
+    2000
+    Transfer occurred successfully
+    Remaining balance is 7900.0
 
-Sample Input and Output 2:
+    Sample Input and Output 2:
 
-Enter your account number:
-1111111
-Enter the balance of the account:
-10000
-Enter the type of transfer to be made:
-1.NEFT
-2.IMPS
-3.RTGS
-2
-Enter the amount to be transferred:
-1000
-Account number or transfer amount seems to be wrong
+    Enter your account number:
+    1111111
+    Enter the balance of the account:
+    10000
+    Enter the type of transfer to be made:
+    1.NEFT
+    2.IMPS
+    3.RTGS
+    2
+    Enter the amount to be transferred:
+    1000
+    Account number or transfer amount seems to be wrong
 
-Sample Input and Output 3:
+    Sample Input and Output 3:
 
-Enter your account number:
-1234567890
-Enter the balance of the account:
-50000
-Enter the type of transfer to be made:
-1.NEFT
-2.IMPS
-3.RTGS
-3
-Enter the amount to be transferred:
-7500
-Transfer could not be made
+    Enter your account number:
+    1234567890
+    Enter the balance of the account:
+    50000
+    Enter the type of transfer to be made:
+    1.NEFT
+    2.IMPS
+    3.RTGS
+    3
+    Enter the amount to be transferred:
+    7500
+    Transfer could not be made
 
- 
+    
 ```java title="Main.java"
 import java.util.*;
 public class Main {
@@ -511,72 +511,72 @@ public class RTGSTransfer extends FundTransfer {
 ```
 ## iAssess
 ### 1
-super() method
+    super() method
 
-So far you have learned about the basics of inheritance and created 2 child classes for a parent class and displayed the details. Now let's go for simple manipulation along with superclass. This will be needed in our application as some class share common attributes so they can be grouped as child classes of some superclass.
+    So far you have learned about the basics of inheritance and created 2 child classes for a parent class and displayed the details. Now let's go for simple manipulation along with superclass. This will be needed in our application as some class share common attributes so they can be grouped as child classes of some superclass.
 
-To try this let's create a parent class Event with following attributes,
-Attributes	Datatype
-name	String
-detail	String
-type	String
-ownerName	String
-costPerDay	Double
+    To try this let's create a parent class Event with following attributes,
+    Attributes	Datatype
+    name	String
+    detail	String
+    type	String
+    ownerName	String
+    costPerDay	Double
 
-Then create child class Exhibition that extends Event with the following attribute,
-Attributes	Datatype
-noOfStall	Integer
+    Then create child class Exhibition that extends Event with the following attribute,
+    Attributes	Datatype
+    noOfStall	Integer
 
-And create another child class StageEvent that extends Event with the following attribute,
-Attributes	Datatype
-noOfSeats	Integer
+    And create another child class StageEvent that extends Event with the following attribute,
+    Attributes	Datatype
+    noOfSeats	Integer
 
-Add suitable constructor (with super() if necessary) and getters/setters for the classes.
+    Add suitable constructor (with super() if necessary) and getters/setters for the classes.
 
-Get the starting and ending date of the event from the user and calculate the total cost for the event. Then calculate GST for the event according to the event type.
+    Get the starting and ending date of the event from the user and calculate the total cost for the event. Then calculate GST for the event according to the event type.
 
-GST is 5% for Exhibition and 15% for StageEvent.
+    GST is 5% for Exhibition and 15% for StageEvent.
 
-Input format:
-The first line of input is an integer which corresponds to the choice of event.
-The second line of input is the details of the event in the CSV format
-(name, detail, type, owner name,costPerDay,noOfStall)  for the Exhibition.  
-(name, detail, type, owner name,costPerDay,noOfSeats)  for the stage event.
-The next line is the starting date of the event.
-The last line of the input is the ending date of the event.
+    Input format:
+    The first line of input is an integer which corresponds to the choice of event.
+    The second line of input is the details of the event in the CSV format
+    (name, detail, type, owner name,costPerDay,noOfStall)  for the Exhibition.  
+    (name, detail, type, owner name,costPerDay,noOfSeats)  for the stage event.
+    The next line is the starting date of the event.
+    The last line of the input is the ending date of the event.
 
-Output format:
-The output is the GST to be paid for the event.
-Refer to sample input/output for other further details and format of the output.
+    Output format:
+    The output is the GST to be paid for the event.
+    Refer to sample input/output for other further details and format of the output.
 
-[All Texts in bold corresponds to the input and rest are output]
-Sample Input/Output 1:
+    [All Texts in bold corresponds to the input and rest are output]
+    Sample Input/Output 1:
 
-Enter your choice:
-1.Exhibition event
-2.Stage event
-1
-Enter the details of exhibition:
-Science Fair,Exciting experiments,Fair,John,10000.00,10
-Enter the starting date of the event:
-03-01-2018
-Enter the ending date of the event:
-06-01-2018
-The GST to be paid is Rs.1500.0
+    Enter your choice:
+    1.Exhibition event
+    2.Stage event
+    1
+    Enter the details of exhibition:
+    Science Fair,Exciting experiments,Fair,John,10000.00,10
+    Enter the starting date of the event:
+    03-01-2018
+    Enter the ending date of the event:
+    06-01-2018
+    The GST to be paid is Rs.1500.0
 
-Sample Input/Output 2:
+    Sample Input/Output 2:
 
-Enter your choice:
-1.Exhibition event
-2.Stage event
-2
-Enter the details of stage event:
-Movie Award Function,Awards for all category,Award function,Joe,100000,10000
-Enter the starting date of the event:
-07-01-2018
-Enter the ending date of the event:
-09-01-2018
-The GST to be paid is Rs.30000.0
+    Enter your choice:
+    1.Exhibition event
+    2.Stage event
+    2
+    Enter the details of stage event:
+    Movie Award Function,Awards for all category,Award function,Joe,100000,10000
+    Enter the starting date of the event:
+    07-01-2018
+    Enter the ending date of the event:
+    09-01-2018
+    The GST to be paid is Rs.30000.0
 ```java title="Main.java"
 import java.text.DecimalFormat;
 import java.time.LocalDate;
@@ -756,152 +756,152 @@ public class StageEvent extends Event{
 
 ```
 ### 2
-Interface
+    Interface
 
-The Interface defines a rule that any classes that implement it should override all the methods. Let's implement Interface in our application. We'll start simple, by including display method in the Stall interface. Now all types of stalls that implement the interface should override the method.
+    The Interface defines a rule that any classes that implement it should override all the methods. Let's implement Interface in our application. We'll start simple, by including display method in the Stall interface. Now all types of stalls that implement the interface should override the method.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create an interface Stall  with the following method
+    Create an interface Stall  with the following method
 
-Method          Description
+    Method          Description
 
-void display()  abstract method.
-
-
-Create a class GoldStall which implements Stall interface with the following private attributes
-
-Attribute   Datatype
-
-stallName   String
-
-cost        Integer
-
-ownerName   String
-
-tvSet       Integer
-
-Create default constructor and a parameterized constructor with arguments in order GoldStall(String stallName, Integer cost, String ownerName, Integer tvSet).
-Include appropriate getters and setters.
-
-Include the following method in the class GoldStall
-
-Method
-
-Description
-
-void display()
-
-To display the stall name, cost of the stall, owner name and the number of tv sets.
+    void display()  abstract method.
 
 
-Create a class PremiumStall which implements Stall interface with following private attributes
+    Create a class GoldStall which implements Stall interface with the following private attributes
 
-Attribute   Datatype
+    Attribute   Datatype
 
-stallName   String
+    stallName   String
 
-cost        Integer
+    cost        Integer
 
-ownerName   String
+    ownerName   String
 
-projector   Integer
+    tvSet       Integer
 
-Create default constructor and a parameterized constructor with arguments in order PremiumStall(String stallName, Integer cost, String ownerName, Integer projector).
-Include appropriate getters and setters.
+    Create default constructor and a parameterized constructor with arguments in order GoldStall(String stallName, Integer cost, String ownerName, Integer tvSet).
+    Include appropriate getters and setters.
 
-Include the following method in the class PremiumStall.
+    Include the following method in the class GoldStall
 
-Method          Description
+    Method
 
-void display()  To display the stall name, cost of the stall, owner name and the number of projectors.
+    Description
 
+    void display()
 
-Create a class ExecutiveStall which implements Stall interface with following private attributes
-
-Attribute   Datatype
-
-stallName   String
-
-cost        Integer
-
-ownerName   String
-
-screen      Integer
-
-Create default constructor and a parameterized constructor with arguments in order ExecutiveStall(String stallName, Integer cost, String ownerName, Integer screen).
-Include appropriate getters and setters.
-
-Include the following method in the class ExecutiveStall.
-
-Method          Description
-
-void display()  To display the stall name, cost of the stall, owner name and the number of screens.
+    To display the stall name, cost of the stall, owner name and the number of tv sets.
 
 
-Create a driver class named Main to test the above class.
+    Create a class PremiumStall which implements Stall interface with following private attributes
 
-Input Format:
-The first input corresponds to choose the stall type.
-The next line of input corresponds to the details of the stall in CSV format according to the stall type.
+    Attribute   Datatype
 
-Output Format:
-Print “Invalid Stall Type” if the user has chosen the stall type other than the given type
-Otherwise, display the details of the stall.
-Refer to sample output for formatting specifications.
+    stallName   String
 
-Note: All Texts in bold corresponds to the input and rest are output
+    cost        Integer
 
-Sample Input and Output 1:
+    ownerName   String
 
-Choose Stall Type
-1)Gold Stall
-2)Premium Stall
-3)Executive Stall
-1
-Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of TV sets)
-The Mechanic,120000,Johnson,10
-Stall Name:The Mechanic
-Cost:120000.Rs
-Owner Name:Johnson
-Number of TV sets:10
+    projector   Integer
 
-Sample Input and Output 2:
+    Create default constructor and a parameterized constructor with arguments in order PremiumStall(String stallName, Integer cost, String ownerName, Integer projector).
+    Include appropriate getters and setters.
 
-ChooseStall Type
-1)Gold Stall
-2)Premium Stall
-3)Executive Stall
-2
-Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of Projectors)
-Knitting plaza,300000,Zain,20
-Stall Name:Knitting plaza
-Cost:300000.Rs
-Owner Name:Zain
-Number of Projectors:20
+    Include the following method in the class PremiumStall.
 
-Sample Input Output 3:
+    Method          Description
 
-ChooseStall Type
-1)Gold Stall
-2)Premium Stall
-3)Executive Stall
-3
-Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of Screens)
-Fruits Hunt,10000,Uber,7
-Stall Name:Fruits Hunt
-Cost:10000.Rs
-Owner Name:Uber
-Number of Screens:7
+    void display()  To display the stall name, cost of the stall, owner name and the number of projectors.
 
-Sample Input Output 4:
 
-ChooseStall Type
-1)Gold Stall
-2)Premium Stall
-3)Executive Stall
-4
-Invalid Stall Type
+    Create a class ExecutiveStall which implements Stall interface with following private attributes
+
+    Attribute   Datatype
+
+    stallName   String
+
+    cost        Integer
+
+    ownerName   String
+
+    screen      Integer
+
+    Create default constructor and a parameterized constructor with arguments in order ExecutiveStall(String stallName, Integer cost, String ownerName, Integer screen).
+    Include appropriate getters and setters.
+
+    Include the following method in the class ExecutiveStall.
+
+    Method          Description
+
+    void display()  To display the stall name, cost of the stall, owner name and the number of screens.
+
+
+    Create a driver class named Main to test the above class.
+
+    Input Format:
+    The first input corresponds to choose the stall type.
+    The next line of input corresponds to the details of the stall in CSV format according to the stall type.
+
+    Output Format:
+    Print “Invalid Stall Type” if the user has chosen the stall type other than the given type
+    Otherwise, display the details of the stall.
+    Refer to sample output for formatting specifications.
+
+    Note: All Texts in bold corresponds to the input and rest are output
+
+    Sample Input and Output 1:
+
+    Choose Stall Type
+    1)Gold Stall
+    2)Premium Stall
+    3)Executive Stall
+    1
+    Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of TV sets)
+    The Mechanic,120000,Johnson,10
+    Stall Name:The Mechanic
+    Cost:120000.Rs
+    Owner Name:Johnson
+    Number of TV sets:10
+
+    Sample Input and Output 2:
+
+    ChooseStall Type
+    1)Gold Stall
+    2)Premium Stall
+    3)Executive Stall
+    2
+    Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of Projectors)
+    Knitting plaza,300000,Zain,20
+    Stall Name:Knitting plaza
+    Cost:300000.Rs
+    Owner Name:Zain
+    Number of Projectors:20
+
+    Sample Input Output 3:
+
+    ChooseStall Type
+    1)Gold Stall
+    2)Premium Stall
+    3)Executive Stall
+    3
+    Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of Screens)
+    Fruits Hunt,10000,Uber,7
+    Stall Name:Fruits Hunt
+    Cost:10000.Rs
+    Owner Name:Uber
+    Number of Screens:7
+
+    Sample Input Output 4:
+
+    ChooseStall Type
+    1)Gold Stall
+    2)Premium Stall
+    3)Executive Stall
+    4
+    Invalid Stall Type
 ```java title="Main.java"
 import java.util.Scanner;
 public class Main {

@@ -32,76 +32,76 @@ public class DBConnection {
 ## 1
 **`Select Statement `**
 
-Write a program to retrieve all the records present in the Book table and display those records in the specified format using the SELECT select.
+    Write a program to retrieve all the records present in the Book table and display those records in the specified format using the SELECT select.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
- 
+    
 
-Create a class named Book with the following private attributes/variables.
+    Create a class named Book with the following private attributes/variables.
 
-Data type	Variable
-Integer	id
-String	title
-String	category
-String	author
-Double	price
-Include appropriate getters and setters.
-Include default and parameterized constructors in the order public Book(Integer id, String title, String category, String author, Double price)
+    Data type	Variable
+    Integer	id
+    String	title
+    String	category
+    String	author
+    Double	price
+    Include appropriate getters and setters.
+    Include default and parameterized constructors in the order public Book(Integer id, String title, String category, String author, Double price)
 
- 
+    
 
-Create a class BookdDAO with the following method.
+    Create a class BookdDAO with the following method.
 
-Method Name	Description
-ArrayList<Book> listBooks()	This method is used to list the all the books in the database.
- 
+    Method Name	Description
+    ArrayList<Book> listBooks()	This method is used to list the all the books in the database.
+    
 
-Create a class DBConnection with following method.
+    Create a class DBConnection with following method.
 
-Method	Description
-public static Connection getConnection()	This method is used to connect the java application with oracle database. Here register the JDBC driver for the application, configure the database properties(fetch from oracle.properties) and return the connection object.
- 
+    Method	Description
+    public static Connection getConnection()	This method is used to connect the java application with oracle database. Here register the JDBC driver for the application, configure the database properties(fetch from oracle.properties) and return the connection object.
+    
 
-Create a class Main with main method. In the method, create instances of the above classes and test the above classes.
+    Create a class Main with main method. In the method, create instances of the above classes and test the above classes.
 
-Use the below format to print the details in table :
-System.out.format("%-5s %-20s %-20s %-10s %s\n","Id","Title","Category","Author","Price");
+    Use the below format to print the details in table :
+    System.out.format("%-5s %-20s %-20s %-10s %s\n","Id","Title","Category","Author","Price");
 
- 
+    
 
-oracle.properties :
+    oracle.properties :
 
-db.url = jdbc:oracle:thin:@localhost:1521:xe
-db.username = root
-db.password = student
+    db.url = jdbc:oracle:thin:@localhost:1521:xe
+    db.username = root
+    db.password = student
 
-Use the below code to retrieve the connection details from oracle.properties to establish connection
+    Use the below code to retrieve the connection details from oracle.properties to establish connection
 
-ResourceBundle rb = ResourceBundle.getBundle("oracle");
-String url = rb.getString("db.url");
-String user = rb.getString("db.username");
-String pass = rb.getString("db.password");
+    ResourceBundle rb = ResourceBundle.getBundle("oracle");
+    String url = rb.getString("db.url");
+    String user = rb.getString("db.username");
+    String pass = rb.getString("db.password");
 
-Table Properties:
+    Table Properties:
 
-create table book(
-id number(10) not null,
-title VARCHAR2(45) not null,
-category VARCHAR2(45) not null,
-author VARCHAR2(45) not null,
-price binary_double not null,
-primary key(id));  
+    create table book(
+    id number(10) not null,
+    title VARCHAR2(45) not null,
+    category VARCHAR2(45) not null,
+    author VARCHAR2(45) not null,
+    price binary_double not null,
+    primary key(id));  
 
-Download the oracle jar file in the below link.
-Oracle jar
+    Download the oracle jar file in the below link.
+    Oracle jar
 
-Sample Input and Output:
+    Sample Input and Output:
 
-List of Books
-Id       Title          Category       Author      Price
-1        Vampire Dairy  Fiction       Chetan      150.0
-2        Harry potter   Witchcraft    Rowling     450.0
+    List of Books
+    Id       Title          Category       Author      Price
+    1        Vampire Dairy  Fiction       Chetan      150.0
+    2        Harry potter   Witchcraft    Rowling     450.0
 ```java title="oraclescript.sql"
 begin
    execute immediate 'drop table travel_class';
@@ -249,71 +249,71 @@ public class BookDAO {
 
 
 ## 2
-Update details of Travel Classes
+    Update details of Travel Classes
 
-Write a java program to update the details of Travel class available in the database and display the list of travel class details in the descending order of names using JDBC drivers.
+    Write a java program to update the details of Travel class available in the database and display the list of travel class details in the descending order of names using JDBC drivers.
 
-[Note:  Strictly adhere to the object-oriented specifications given as a part of the problem statement. Follow the naming conventions as mentioned. Create separate classes in separate files.]
+    [Note:  Strictly adhere to the object-oriented specifications given as a part of the problem statement. Follow the naming conventions as mentioned. Create separate classes in separate files.]
 
-Create a class TravelClass with the following attributes.
+    Create a class TravelClass with the following attributes.
 
-Data Type	Variable Name
-String	name
-String	description
-Include appropirate getters, setters, default and parameterized constructors for the above class
+    Data Type	Variable Name
+    String	name
+    String	description
+    Include appropirate getters, setters, default and parameterized constructors for the above class
 
-Create a class TravelClassDAO with a following method
+    Create a class TravelClassDAO with a following method
 
-Method name	Description
-ArrayList<TravelClass> listAllTravelClassess()	This method retrieves the list of travel classes available in the database in the descending order of the travel class name and returns the same.
-void updateDetail(String name, String description)	This method update the given description into the database for the given travel class name.
+    Method name	Description
+    ArrayList<TravelClass> listAllTravelClassess()	This method retrieves the list of travel classes available in the database in the descending order of the travel class name and returns the same.
+    void updateDetail(String name, String description)	This method update the given description into the database for the given travel class name.
 
-Create a class DBConnection with following method.
+    Create a class DBConnection with following method.
 
-Method	Description
-public static Connection getConnection()	This method is used to connect the java application with oracle database. Here register the JDBC driver for the application, configure the database properties(fetch from oracle.properties) and return the connection object.
+    Method	Description
+    public static Connection getConnection()	This method is used to connect the java application with oracle database. Here register the JDBC driver for the application, configure the database properties(fetch from oracle.properties) and return the connection object.
 
-Create a class Main with main method and call the methods of TravelClassDAO and display the list as shown in the main method.
+    Create a class Main with main method and call the methods of TravelClassDAO and display the list as shown in the main method.
 
-Use the below format to print the details in table :
-System.out.format("%-25s %s\n","Name","Description");
+    Use the below format to print the details in table :
+    System.out.format("%-25s %s\n","Name","Description");
 
-oracle.properties :
+    oracle.properties :
 
-db.url = jdbc:oracle:thin:@localhost:1521:xe
-db.username = root
-db.password = student
+    db.url = jdbc:oracle:thin:@localhost:1521:xe
+    db.username = root
+    db.password = student
 
-Use the below code to retrieve the connection details from oracle.properties to establish connection
+    Use the below code to retrieve the connection details from oracle.properties to establish connection
 
-ResourceBundle rb = ResourceBundle.getBundle("oracle");
-String url = rb.getString("db.url");
-String user = rb.getString("db.username");
-String pass = rb.getString("db.password");
+    ResourceBundle rb = ResourceBundle.getBundle("oracle");
+    String url = rb.getString("db.url");
+    String user = rb.getString("db.username");
+    String pass = rb.getString("db.password");
 
-Table Properties:
+    Table Properties:
 
-create table travel_class(
-id number(10) not null,
-name VARCHAR2(45) not null,
-description CLOB not null,
-primary key(id)
-);
+    create table travel_class(
+    id number(10) not null,
+    name VARCHAR2(45) not null,
+    description CLOB not null,
+    primary key(id)
+    );
 
 
-Download the oracle jar file in the below link.
-Oracle jar
+    Download the oracle jar file in the below link.
+    Oracle jar
 
-Sample Input and Output:
-Enter the name of TravelClass :
-Economy Class
-Enter the description to update :
-Lowest travel class of seating in flight travel.
-Updated List of Travel Classes
-Name                      Description                   
-Premium Economy Class     Positioning in price, comfort, and amenities, this travel class is leveled between economy class and business class.
-Economy Class             Lowest travel class of seating in flight travel.
-Business Class            Intermediate level of service between economy class and first class.
+    Sample Input and Output:
+    Enter the name of TravelClass :
+    Economy Class
+    Enter the description to update :
+    Lowest travel class of seating in flight travel.
+    Updated List of Travel Classes
+    Name                      Description                   
+    Premium Economy Class     Positioning in price, comfort, and amenities, this travel class is leveled between economy class and business class.
+    Economy Class             Lowest travel class of seating in flight travel.
+    Business Class            Intermediate level of service between economy class and first class.
 
 ```java title="Main.java"
 import java.io.*;
@@ -480,80 +480,80 @@ public class TravelClassDAO {
 
 ```
 ## 3
-Insert new Airport
-Write a program to insert the airport data and display the list of airport details by retrieving data from the database.
+    Insert new Airport
+    Write a program to insert the airport data and display the list of airport details by retrieving data from the database.
 
-[Note:  Strictly adhere to the object-oriented specifications given as a part of the problem statement. Follow the naming conventions as mentioned. Create separate classes in separate files.]
+    [Note:  Strictly adhere to the object-oriented specifications given as a part of the problem statement. Follow the naming conventions as mentioned. Create separate classes in separate files.]
 
-The class Airport has been created with the following attributes.
+    The class Airport has been created with the following attributes.
 
-Data type	Variable name
-String	iataAirportCode
-String	name
-String	city
-String	country
-The appropriate getters, setters, default and parameterized constructors for the above class have been already included for you.
+    Data type	Variable name
+    String	iataAirportCode
+    String	name
+    String	city
+    String	country
+    The appropriate getters, setters, default and parameterized constructors for the above class have been already included for you.
 
-The class AirportDAO has been created with the following methods.
+    The class AirportDAO has been created with the following methods.
 
-Method name	Description
-ArrayList<Airport> listAirport()	This method will return the list of airports sorted in ascending order based on iataAirportCode in the database
-void insertAirport(Airport airportIns)	This method will insert the new airport into the database
- 
+    Method name	Description
+    ArrayList<Airport> listAirport()	This method will return the list of airports sorted in ascending order based on iataAirportCode in the database
+    void insertAirport(Airport airportIns)	This method will insert the new airport into the database
+    
 
-The class DBConnection has been created with the following method.
+    The class DBConnection has been created with the following method.
 
-Method	Description
-public static Connection getConnection()	This method is used to connect the java application with oracle database. Here register the JDBC driver for the application, configure the database properties(fetch from oracle.properties) and return the connection object.
+    Method	Description
+    public static Connection getConnection()	This method is used to connect the java application with oracle database. Here register the JDBC driver for the application, configure the database properties(fetch from oracle.properties) and return the connection object.
 
-Create a class Main with main method. In the method, create instances of the above classes and test the above classes.
+    Create a class Main with main method. In the method, create instances of the above classes and test the above classes.
 
-Use the below format to print the details in table :
-System.out.format("%-10s %-40s %-10s %s\n","IATA Code","Name","City","Country");
+    Use the below format to print the details in table :
+    System.out.format("%-10s %-40s %-10s %s\n","IATA Code","Name","City","Country");
 
- 
+    
 
-oracle.properties :
+    oracle.properties :
 
-db.url = jdbc:oracle:thin:@localhost:1521:xe
-db.username = root
-db.password = student
+    db.url = jdbc:oracle:thin:@localhost:1521:xe
+    db.username = root
+    db.password = student
 
-The below code has already been implemented to retrieve the connection details from oracle.properties to establish connection.
+    The below code has already been implemented to retrieve the connection details from oracle.properties to establish connection.
 
-ResourceBundle rb = ResourceBundle.getBundle("oracle");
-String url = rb.getString("db.url");
-String user = rb.getString("db.username");
-String pass = rb.getString("db.password");
+    ResourceBundle rb = ResourceBundle.getBundle("oracle");
+    String url = rb.getString("db.url");
+    String user = rb.getString("db.username");
+    String pass = rb.getString("db.password");
 
-Table Properties:
+    Table Properties:
 
-create table airport(
-id number(10) GENERATED ALWAYS AS IDENTITY not null,
-iata_airport_code VARCHAR2(45) not null,
-name VARCHAR2(45) not null,
-city VARCHAR2(45) not null,
-country_name VARCHAR2(45) not null,
-primary key(id));
+    create table airport(
+    id number(10) GENERATED ALWAYS AS IDENTITY not null,
+    iata_airport_code VARCHAR2(45) not null,
+    name VARCHAR2(45) not null,
+    city VARCHAR2(45) not null,
+    country_name VARCHAR2(45) not null,
+    primary key(id));
 
 
-Download the oracle jar file in the below link.
-Oracle jar
+    Download the oracle jar file in the below link.
+    Oracle jar
 
-Sample Input and Output:
-Enter the Airport Code :
-MDZ
-Enter the Airport name :
-Francisco Gabriell International Airport
-Enter the City :
-Mendoza
-Enter the Country name :
-Arizona
-IATA Code  Name                                     City       Country
-BNE        Brisbane Airport                         Brisbane   Australia
-COK        Cochin International Airport             Cochin     India
-MDZ        Francisco Gabriell International Airport Mendoza    Arizona
-SXR        Srinagar International Airport           Srinagar   India
+    Sample Input and Output:
+    Enter the Airport Code :
+    MDZ
+    Enter the Airport name :
+    Francisco Gabriell International Airport
+    Enter the City :
+    Mendoza
+    Enter the Country name :
+    Arizona
+    IATA Code  Name                                     City       Country
+    BNE        Brisbane Airport                         Brisbane   Australia
+    COK        Cochin International Airport             Cochin     India
+    MDZ        Francisco Gabriell International Airport Mendoza    Arizona
+    SXR        Srinagar International Airport           Srinagar   India
 ```java title="Main.java"
 import java.io.*;
 import java.util.ArrayList;
@@ -730,89 +730,89 @@ public class AirportDAO {
 
 ```
 ## iAssess
-User-Delete
+    User-Delete
 
-The users who enter into 20 Ideas for Vision 2020 must be active and must keep posting their ideas.If the administrator finds out that the user is not active the admin can delete the user record from the table. Help the admin to delete the user record from the table.
+    The users who enter into 20 Ideas for Vision 2020 must be active and must keep posting their ideas.If the administrator finds out that the user is not active the admin can delete the user record from the table. Help the admin to delete the user record from the table.
 
-[Note:  Strictly adhere to the object-oriented specifications given as a part of the problem statement. Follow the naming conventions as mentioned. Create separate classes in separate files.]
+    [Note:  Strictly adhere to the object-oriented specifications given as a part of the problem statement. Follow the naming conventions as mentioned. Create separate classes in separate files.]
 
-Create a User with following private attributes.
-Data Type	Variable
-Integer	id
-String	name
-String	email
-String	password
-Integer	age
-String	role
-Date	createdDate
-String	status
-Include appropriate getters, setters, default and parameterized constructors for the above class.
-
-
-Create a class UserDAO with following methods
-
-Method Name	Method Description
-ArrayList<User> listUsers()	This method returns the list of users available in the database
-void deleteUser(Integer id)	This method will delete the user from the database using the given id
-
-Create a class DBConnection with following method
-Method	Description
-public static Connection getConnection()	This method is used to connect the java application with oracle database. Here register the JDBC driver for the application,configure the database properties(fetch from oracle.properties) and return the connection object.
-
-Create a class Main with main method and call the methods of UserDAO and display the list as shown.
+    Create a User with following private attributes.
+    Data Type	Variable
+    Integer	id
+    String	name
+    String	email
+    String	password
+    Integer	age
+    String	role
+    Date	createdDate
+    String	status
+    Include appropriate getters, setters, default and parameterized constructors for the above class.
 
 
-Output Format:
-Use Java Format Specifier to display the user details
- System.out.format("%-15s %-15s %-15s %-15s %-15s %-15s %-15s %s\n","Id","Name","Email","Password","Age","Role","CreatedDate","Status");
+    Create a class UserDAO with following methods
+
+    Method Name	Method Description
+    ArrayList<User> listUsers()	This method returns the list of users available in the database
+    void deleteUser(Integer id)	This method will delete the user from the database using the given id
+
+    Create a class DBConnection with following method
+    Method	Description
+    public static Connection getConnection()	This method is used to connect the java application with oracle database. Here register the JDBC driver for the application,configure the database properties(fetch from oracle.properties) and return the connection object.
+
+    Create a class Main with main method and call the methods of UserDAO and display the list as shown.
 
 
-Table Properties:
+    Output Format:
+    Use Java Format Specifier to display the user details
+    System.out.format("%-15s %-15s %-15s %-15s %-15s %-15s %-15s %s\n","Id","Name","Email","Password","Age","Role","CreatedDate","Status");
 
-create table "user"(
-id number(10) GENERATED ALWAYS AS IDENTITY not null,
-name varchar2(50) not null,
-email varchar2(50) not null,
-password varchar2(50) not null,
-age number(10) not null,
-role varchar2(50) not null,
-created_date date not null,
-status varchar2(50) not null,
-primary key(id));
 
- 
+    Table Properties:
 
-oracle.properties :
+    create table "user"(
+    id number(10) GENERATED ALWAYS AS IDENTITY not null,
+    name varchar2(50) not null,
+    email varchar2(50) not null,
+    password varchar2(50) not null,
+    age number(10) not null,
+    role varchar2(50) not null,
+    created_date date not null,
+    status varchar2(50) not null,
+    primary key(id));
 
-db.url = jdbc:oracle:thin:@localhost:1521:xe
-db.username = root
-db.password = student
+    
 
-Use the below code to retrieve the connection details from oracle.properties to establish connection
+    oracle.properties :
 
-ResourceBundle rb = ResourceBundle.getBundle("oracle");
-String url = rb.getString("db.url");
-String user = rb.getString("db.username");
-String pass = rb.getString("db.password");
+    db.url = jdbc:oracle:thin:@localhost:1521:xe
+    db.username = root
+    db.password = student
 
- 
-Download the oracle jar file in the below link.
-Oracle jar
+    Use the below code to retrieve the connection details from oracle.properties to establish connection
 
-Sample Input and Output
-[All text in bold are input and the remaining are output]
+    ResourceBundle rb = ResourceBundle.getBundle("oracle");
+    String url = rb.getString("db.url");
+    String user = rb.getString("db.username");
+    String pass = rb.getString("db.password");
 
-Before the Delete
-Id              Name            Email           Password        Age             Role            CreatedDate     Status         
-1               Asha            ash@a.com       as123           18              user            2015-10-13      Approved       
-2               Rahul           rh@a.com        rh@123          15              user            2015-10-14      Approved       
-3               Ravi            rv@a.com        rv@98           20              user            2015-10-14      pending        
-Enter the Id :
-1
-After the Delete
-Id              Name            Email           Password        Age             Role            CreatedDate     Status         
-2               Rahul           rh@a.com        rh@123          15              user            2015-10-14      Approved       
-3               Ravi            rv@a.com        rv@98           20              user            2015-10-14      pending
+    
+    Download the oracle jar file in the below link.
+    Oracle jar
+
+    Sample Input and Output
+    [All text in bold are input and the remaining are output]
+
+    Before the Delete
+    Id              Name            Email           Password        Age             Role            CreatedDate     Status         
+    1               Asha            ash@a.com       as123           18              user            2015-10-13      Approved       
+    2               Rahul           rh@a.com        rh@123          15              user            2015-10-14      Approved       
+    3               Ravi            rv@a.com        rv@98           20              user            2015-10-14      pending        
+    Enter the Id :
+    1
+    After the Delete
+    Id              Name            Email           Password        Age             Role            CreatedDate     Status         
+    2               Rahul           rh@a.com        rh@123          15              user            2015-10-14      Approved       
+    3               Ravi            rv@a.com        rv@98           20              user            2015-10-14      pending
 ```java title="Main.java"
 import java.util.*;
 import java.io.*;

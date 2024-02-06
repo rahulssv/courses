@@ -1,53 +1,53 @@
 # Streams and Files
 ## 1
-File handling introduction
+    File handling introduction
 
-File handling is an important technique that you need to accustom to it. File reading and writing are types of handling. Let's practice file reading for now. There is a Class called FileReader that will help us with file reading. You'll be provided with a file that contains the data in CSV format. Using FileReader, read the file and parse the data contained in it to below specified format.
+    File handling is an important technique that you need to accustom to it. File reading and writing are types of handling. Let's practice file reading for now. There is a Class called FileReader that will help us with file reading. You'll be provided with a file that contains the data in CSV format. Using FileReader, read the file and parse the data contained in it to below specified format.
 
-Provided "input.csv" which have User details. Read all the user information stored in CSV format and create a user object by parsing the line. Add all the user objects to the ArrayList. At last, display the user list.
+    Provided "input.csv" which have User details. Read all the user information stored in CSV format and create a user object by parsing the line. Add all the user objects to the ArrayList. At last, display the user list.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create a class called User with following private attributes
+    Create a class called User with following private attributes
 
-Attributes	Datatype
-name	String
-email	String
-username	String
-password	String
+    Attributes	Datatype
+    name	String
+    email	String
+    username	String
+    password	String
 
-Include getters and setters.
-Create a default constructor and parameterized constructor.
-Format for the parameterized constructor is User(String name, String email, String username, String password)
+    Include getters and setters.
+    Create a default constructor and parameterized constructor.
+    Format for the parameterized constructor is User(String name, String email, String username, String password)
 
-Create UserBO class with following methods
+    Create UserBO class with following methods
 
-Method 	Description
-public List<User> readFromFile(BufferedReader br)	This method accepts the BufferedReader object as input and parses the data
-in the file to User objects and adds them to a list. Finally, it returns the list of User objects.
-public void display(List<User> list)	This method accepts a list of User objects and displays the user details by iterating the list.
-Use "%-15s %-20s %-15s %s\n" to print the details.
+    Method 	Description
+    public List<User> readFromFile(BufferedReader br)	This method accepts the BufferedReader object as input and parses the data
+    in the file to User objects and adds them to a list. Finally, it returns the list of User objects.
+    public void display(List<User> list)	This method accepts a list of User objects and displays the user details by iterating the list.
+    Use "%-15s %-20s %-15s %s\n" to print the details.
 
-Create a driver class called Main. If the List of Users is empty print "The list is empty" in the main method. Else display the user detail by calling the display method.
+    Create a driver class called Main. If the List of Users is empty print "The list is empty" in the main method. Else display the user detail by calling the display method.
 
-Note : Use BufferedReader br=new BufferedReader(new FileReader("input.csv")) for file reading.
+    Note : Use BufferedReader br=new BufferedReader(new FileReader("input.csv")) for file reading.
 
-Input format:
-Read the input from the "input.csv" file which contains the user details.
+    Input format:
+    Read the input from the "input.csv" file which contains the user details.
 
-Output format:
-Use "%-15s %-20s %-15s %s\n" to print statements for the heading of the details in the Main method.
+    Output format:
+    Use "%-15s %-20s %-15s %s\n" to print statements for the heading of the details in the Main method.
 
-Sample Input: (input.csv)
-
-
+    Sample Input: (input.csv)
 
 
-Sample Output :
 
-Name            Email                Username        Password
-Ram             ram@gmail.com        ram             ram123
-krish           krish@gmail.com     krish           abc
+
+    Sample Output :
+
+    Name            Email                Username        Password
+    Ram             ram@gmail.com        ram             ram123
+    krish           krish@gmail.com     krish           abc
 ```java title="input.csv"
 Ram,ram@gmail.com,ram,ram123
 krish,krish@gmail.com,krish,abc
@@ -163,53 +163,53 @@ public class UserBO {
 
 ```
 ## 2
-File Writing
-The file we write can be of several formats. But for now, we are just going to write a CSV text file, in which all the fields are separated by comma delimiter. Use FileWriter and BufferedWriter to write the data to a file.
+    File Writing
+    The file we write can be of several formats. But for now, we are just going to write a CSV text file, in which all the fields are separated by comma delimiter. Use FileWriter and BufferedWriter to write the data to a file.
 
-As a first thing, we are gonna create a file that contains the record of all the users registered. So write a program that can write all the user details from the console into a file "output.csv".
+    As a first thing, we are gonna create a file that contains the record of all the users registered. So write a program that can write all the user details from the console into a file "output.csv".
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create a class User with the following attributes, 
+    Create a class User with the following attributes, 
 
-Attribute	Data type
-name	String
-mobileNumber	String
-username	String
-password	String
- 
-Create a class UserBO with the following methods,
+    Attribute	Data type
+    name	String
+    mobileNumber	String
+    username	String
+    password	String
+    
+    Create a class UserBO with the following methods,
 
-Method	Description
-public static void writeFile(ArrayList<User> userList, BufferedWriter bw)	This method gets a list of the user as argument and
-writes all the user details in the list into a file
+    Method	Description
+    public static void writeFile(ArrayList<User> userList, BufferedWriter bw)	This method gets a list of the user as argument and
+    writes all the user details in the list into a file
 
-Create a driver class Main and use the main method to get the details from the user.
+    Create a driver class Main and use the main method to get the details from the user.
 
-Input format:
-The first line of input consists of an integer that corresponds to the number of users.
-The next n line of input consists of user details in  the CSV format (name, mobileNumber, username, password)
-Refer to sample Input for other further details.
+    Input format:
+    The first line of input consists of an integer that corresponds to the number of users.
+    The next n line of input consists of user details in  the CSV format (name, mobileNumber, username, password)
+    Refer to sample Input for other further details.
 
-Output format:
-Write the user details in the output.csv file.
-Refer to sample Output for other further details.
+    Output format:
+    Write the user details in the output.csv file.
+    Refer to sample Output for other further details.
 
-Sample Input:
-[All Texts in bold corresponds to the input and rest are output]
+    Sample Input:
+    [All Texts in bold corresponds to the input and rest are output]
 
-Enter the number of users:
-3
-Enter the details of user :1
-Jane,1234,jane,jane
-Enter the details of user :2
-John,5678,john,john
-Enter the details of user :3
-Jill,1357,jill,jill
+    Enter the number of users:
+    3
+    Enter the details of user :1
+    Jane,1234,jane,jane
+    Enter the details of user :2
+    John,5678,john,john
+    Enter the details of user :3
+    Jill,1357,jill,jill
 
- 
+    
 
-Sample Output: (output.csv)
+    Sample Output: (output.csv)
 
 ```java title="output.csv"
 Jane,1234,jane,jane
@@ -337,43 +337,43 @@ public class UserBO {
 
 ```
 ## 3
-Read and Write
-In our application, we are gonna read the contents of a file and write it into another file with some conditions. There can be many events for the same organization or owner. But we want only one event for every owner available. So we are gonna read the event details from the file "input.txt" and then write the event details into "output.txt" but after removal of duplicate entries.
+    Read and Write
+    In our application, we are gonna read the contents of a file and write it into another file with some conditions. There can be many events for the same organization or owner. But we want only one event for every owner available. So we are gonna read the event details from the file "input.txt" and then write the event details into "output.txt" but after removal of duplicate entries.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create a class Event with the following private attributes
+    Create a class Event with the following private attributes
 
-Attributes	Datatype
-eventName	String
-attendeesCount	Integer
-ownerName	String
-Include appropriate getters and setters
-Create default constructor and a parameterized constructor with arguments in order Event(String eventName, Integer attendeesCount, String ownerName).
+    Attributes	Datatype
+    eventName	String
+    attendeesCount	Integer
+    ownerName	String
+    Include appropriate getters and setters
+    Create default constructor and a parameterized constructor with arguments in order Event(String eventName, Integer attendeesCount, String ownerName).
 
-Create a class EventBO to access the above class. Include the following public methods.
+    Create a class EventBO to access the above class. Include the following public methods.
 
-Method	Description
-public List<Event> readFromFile(BufferedReader br)	This method accepts the BufferedReader object as input and parses the data in the file to Event objects
-and then adds them to a list. Finally, it returns the list of Event objects.
-void writeFile(List<Event> eventList,FileWriter fr)	This method takes event list and file writer as the arguments and writes into "output.txt" with
-the removal of duplicate event details (i.e) an event having the same owner name.
- 
+    Method	Description
+    public List<Event> readFromFile(BufferedReader br)	This method accepts the BufferedReader object as input and parses the data in the file to Event objects
+    and then adds them to a list. Finally, it returns the list of Event objects.
+    void writeFile(List<Event> eventList,FileWriter fr)	This method takes event list and file writer as the arguments and writes into "output.txt" with
+    the removal of duplicate event details (i.e) an event having the same owner name.
+    
 
-Create a driver class named Main which reads data from console and to test the above class.
+    Create a driver class named Main which reads data from console and to test the above class.
 
-Input:
-Read the contents[event details] from the file "input.txt".
+    Input:
+    Read the contents[event details] from the file "input.txt".
 
-Output:
-Write the contents[event details] with the removal of duplicate events into the "output.txt".
+    Output:
+    Write the contents[event details] with the removal of duplicate events into the "output.txt".
 
-Sample Input: (input.txt)
-
-
+    Sample Input: (input.txt)
 
 
-Sample Output: (output.txt)
+
+
+    Sample Output: (output.txt)
 
 
 ```java title="input.txt"
@@ -519,27 +519,27 @@ public class EventBO {
 ```
 
 ## iAssess
-IO - Simple File Write
- 
-Write a Java program to record the airport details into the file. Get the airport details name, cityName and countryCode from the user and write that information in a comma-separated format in a file (CSV).
-Below is the format of the output file.
-<name>,<cityName>,<countryCode>
-eg: Cochin International Airport,Cochin,IN
-Create a main class "Main.java"
- 
-Input and Output Format:
-Get the airport details name, cityName and country code from the user.
-Print the airport details in the output file airport.csv
-Sample Input :
-[All text in bold corresponds to input and the rest corresponds to output]
-Enter the name of the airport
-Cochin International Airport
-Enter the city name
-Cochin
-Enter the country code
-IN
+    IO - Simple File Write
+    
+    Write a Java program to record the airport details into the file. Get the airport details name, cityName and countryCode from the user and write that information in a comma-separated format in a file (CSV).
+    Below is the format of the output file.
+    <name>,<cityName>,<countryCode>
+    eg: Cochin International Airport,Cochin,IN
+    Create a main class "Main.java"
+    
+    Input and Output Format:
+    Get the airport details name, cityName and country code from the user.
+    Print the airport details in the output file airport.csv
+    Sample Input :
+    [All text in bold corresponds to input and the rest corresponds to output]
+    Enter the name of the airport
+    Cochin International Airport
+    Enter the city name
+    Cochin
+    Enter the country code
+    IN
 
-Sample Output:
+    Sample Output:
 
 
 ```java title="airport.csv"

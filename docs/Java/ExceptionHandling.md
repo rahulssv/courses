@@ -1,49 +1,49 @@
 # Exception Handling
 ## 1
-NumberFormatException
-Let’s learn a common type of exception which you would have come across already. When you use BufferedReader to read input you need to parse String it into various datatype like Integer, Double. For example, If you try to parse a String ("abc") into Integer, it throws NumberFormatException. So let's try to handle this NumberFormat exception.
+    NumberFormatException
+    Let’s learn a common type of exception which you would have come across already. When you use BufferedReader to read input you need to parse String it into various datatype like Integer, Double. For example, If you try to parse a String ("abc") into Integer, it throws NumberFormatException. So let's try to handle this NumberFormat exception.
 
-In our application, while acquiring attributes for classes like ItemType, this exception may occur. So try to handle it in this program.
+    In our application, while acquiring attributes for classes like ItemType, this exception may occur. So try to handle it in this program.
 
-Create a class ItemType with the following attribute,
-Attributes	Data type
-name	String
-deposit	Double
-costPerDay	Double
+    Create a class ItemType with the following attribute,
+    Attributes	Data type
+    name	String
+    deposit	Double
+    costPerDay	Double
 
-Add appropriate getter/setter, default and parameterized constructor. public ItemType(String name, Double deposit, Double costPerDay).
+    Add appropriate getter/setter, default and parameterized constructor. public ItemType(String name, Double deposit, Double costPerDay).
 
-Override toString() and print the details as in the specified format.
+    Override toString() and print the details as in the specified format.
 
-Create a Main class and test the above class. Display "The details of the item type are:" in the main method. Handle the NumberFormatException in the Main Class.
+    Create a Main class and test the above class. Display "The details of the item type are:" in the main method. Handle the NumberFormatException in the Main Class.
 
-Input and Output format:
-Refer to sample Input and Output for formatting specifications.
+    Input and Output format:
+    Refer to sample Input and Output for formatting specifications.
 
-[All Texts in bold corresponds to the input and rest are output]
+    [All Texts in bold corresponds to the input and rest are output]
 
-Sample Input and Output 1:
+    Sample Input and Output 1:
 
-Enter the Item type details:
-Enter the name:
-Electronics
-Enter the deposit:
-1000
-Enter the cost per day:
-100
-The details of the item type are:
-Name:Electronics
-Deposit:1000.0
-Cost Per Day:100.0
+    Enter the Item type details:
+    Enter the name:
+    Electronics
+    Enter the deposit:
+    1000
+    Enter the cost per day:
+    100
+    The details of the item type are:
+    Name:Electronics
+    Deposit:1000.0
+    Cost Per Day:100.0
 
-Sample Input and Output 2:
+    Sample Input and Output 2:
 
-Enter the Item type details:
-Enter the name:
-Electronics
-Enter the deposit:
-One thousand
-java.lang.NumberFormatException: For input string: "One thousand"
+    Enter the Item type details:
+    Enter the name:
+    Electronics
+    Enter the deposit:
+    One thousand
+    java.lang.NumberFormatException: For input string: "One thousand"
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -98,51 +98,51 @@ public class ItemType {
 }
 ```
 ## 2
-ArrayIndexOutOfBoundsException
+    ArrayIndexOutOfBoundsException
 
-The next prominent exception which you will see is ArrayIndexOutOfBoundsException. It occurs when the program tries to access the array beyond its size. As we know arrays have fixed size. So when you try to use array beyond its size it throws this exception. Let's try to handle this exception.
+    The next prominent exception which you will see is ArrayIndexOutOfBoundsException. It occurs when the program tries to access the array beyond its size. As we know arrays have fixed size. So when you try to use array beyond its size it throws this exception. Let's try to handle this exception.
 
-Handling this exception will also prove to be good for our application. For example, if there are only 100 seats in the event and the user tries to book the 105th seat, it will throw this exception. So you must handle it to do a specific job.
+    Handling this exception will also prove to be good for our application. For example, if there are only 100 seats in the event and the user tries to book the 105th seat, it will throw this exception. So you must handle it to do a specific job.
 
-Create an array of size 100 and assume it as seat array. Get the tickets to be booked from the user and handle any exception that occurs in Main Class. At last display all the tickets booked.
+    Create an array of size 100 and assume it as seat array. Get the tickets to be booked from the user and handle any exception that occurs in Main Class. At last display all the tickets booked.
 
-Input and Output format:
-The first line of input consists of an integer which corresponds to the number of seats to be booked.
-The next n lines of input consist of the integer which corresponds to the seat number.
-Refer to sample Input and Output for formatting specifications.
+    Input and Output format:
+    The first line of input consists of an integer which corresponds to the number of seats to be booked.
+    The next n lines of input consist of the integer which corresponds to the seat number.
+    Refer to sample Input and Output for formatting specifications.
 
-Note: All Texts in bold corresponds to the input and rest are output.
+    Note: All Texts in bold corresponds to the input and rest are output.
 
-Sample Input and Output 1:
+    Sample Input and Output 1:
 
-Enter the number of seats to be booked:
-5
-Enter the seat number 1
-23
-Enter the seat number 2
-42
-Enter the seat number 3
-65
-Enter the seat number 4
-81
-Enter the seat number 5
-100
-The seats booked are:
-23
-42
-65
-81
-100
+    Enter the number of seats to be booked:
+    5
+    Enter the seat number 1
+    23
+    Enter the seat number 2
+    42
+    Enter the seat number 3
+    65
+    Enter the seat number 4
+    81
+    Enter the seat number 5
+    100
+    The seats booked are:
+    23
+    42
+    65
+    81
+    100
 
-Sample Input and Output 2:
+    Sample Input and Output 2:
 
-Enter the number of seats to be booked:
-4
-Enter the seat number 1
-12
-Enter the seat number 2
-101
-java.lang.ArrayIndexOutOfBoundsException: 100
+    Enter the number of seats to be booked:
+    4
+    Enter the seat number 1
+    12
+    Enter the seat number 2
+    101
+    java.lang.ArrayIndexOutOfBoundsException: 100
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -175,58 +175,58 @@ public class Main {
 
 ```
 ## 3
-Duplicate mobile number exception
- 
+    Duplicate mobile number exception
+    
 
-Write a java program to find the duplicate mobile number using the exception handling mechanism.
+    Write a java program to find the duplicate mobile number using the exception handling mechanism.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create a Class called ContactDetail with the following private attributes.
+    Create a Class called ContactDetail with the following private attributes.
 
-Attributes	Datatype
-mobile	String
-alternateMobile	String
-landLine	String
-email	String
-address	String
-Include getters and setters.
-Include default and parameterized constructors.
-Format for a parameterized constructor is ContactDetail(String mobile, String alternateMobile,String landLine, String email, String address)
+    Attributes	Datatype
+    mobile	String
+    alternateMobile	String
+    landLine	String
+    email	String
+    address	String
+    Include getters and setters.
+    Include default and parameterized constructors.
+    Format for a parameterized constructor is ContactDetail(String mobile, String alternateMobile,String landLine, String email, String address)
 
-Override the toString() method to display the Contact details as specified.
+    Override the toString() method to display the Contact details as specified.
 
-Create a class called ContactDetailBO with following methods
+    Create a class called ContactDetailBO with following methods
 
-Method 	Description
-static void validate(String mobile,String alternateMobile)	This method throws DuplicateMobileNumber exception
-if the mobile and alternateMobile are the same.
- 
+    Method 	Description
+    static void validate(String mobile,String alternateMobile)	This method throws DuplicateMobileNumber exception
+    if the mobile and alternateMobile are the same.
+    
 
-Create a driver class called Main. In the Main method, obtain inputs from the user. Validate the mobile and alternateMobile and display the ContactDetail if no exception occurs else handle the exception.
+    Create a driver class called Main. In the Main method, obtain inputs from the user. Validate the mobile and alternateMobile and display the ContactDetail if no exception occurs else handle the exception.
 
-Pass the exception message as "Mobile number and alternate mobile number are same". If mobile and alternateMobile are the same.
+    Pass the exception message as "Mobile number and alternate mobile number are same". If mobile and alternateMobile are the same.
 
-Input and Output format:
-Refer to sample Input and Output for formatting specifications.
+    Input and Output format:
+    Refer to sample Input and Output for formatting specifications.
 
-Note: All text in bold corresponds to the input and rest corresponds to the output.
+    Note: All text in bold corresponds to the input and rest corresponds to the output.
 
-Sample Input and Output 1:
+    Sample Input and Output 1:
 
-Enter the contact details
-9874563210,9874563210,0447896541,johndoe@abc.in,22nd street kk nagar chennai
-DuplicateMobileNumberException: Mobile number and alternate mobile number are same
+    Enter the contact details
+    9874563210,9874563210,0447896541,johndoe@abc.in,22nd street kk nagar chennai
+    DuplicateMobileNumberException: Mobile number and alternate mobile number are same
 
-Sample Input and Output 2:
+    Sample Input and Output 2:
 
-Enter the contact details
-9874563210,9876543211,0447896541,johndoe@abc.in,22nd lane RR nagar kovai
-Mobile:9874563210
-Alternate mobile:9876543211
-LandLine:0447896541
-Email:johndoe@abc.in
-Address:22nd lane RR nagar kovai
+    Enter the contact details
+    9874563210,9876543211,0447896541,johndoe@abc.in,22nd lane RR nagar kovai
+    Mobile:9874563210
+    Alternate mobile:9876543211
+    LandLine:0447896541
+    Email:johndoe@abc.in
+    Address:22nd lane RR nagar kovai
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -300,35 +300,35 @@ public class DuplicateMobileNumberException extends Exception {
 ```
 ## iAssess
 ### 1
-Parse Exception
-  
-For our application, we would have obtained date inputs. If the user enters a different format other than specified, an Invalid Date Exception occurs and the program is interrupted. To avoid that, handle the exception and prompt the user to enter the right format as specified.
+    Parse Exception
+    
+    For our application, we would have obtained date inputs. If the user enters a different format other than specified, an Invalid Date Exception occurs and the program is interrupted. To avoid that, handle the exception and prompt the user to enter the right format as specified.
 
-Create a driver class called Main. In the main method, Obtain start time and end time for stage event show, if an exception occurs, handle the exception and notify the user about the right format.
+    Create a driver class called Main. In the main method, Obtain start time and end time for stage event show, if an exception occurs, handle the exception and notify the user about the right format.
 
-Input format:
-The input consists of the start date and end date. 
-The format for the date is dd-MM-yyyy-HH:mm:ss
+    Input format:
+    The input consists of the start date and end date. 
+    The format for the date is dd-MM-yyyy-HH:mm:ss
 
-Output format:
-Refer sample Input and Output for formatting specifications 
+    Output format:
+    Refer sample Input and Output for formatting specifications 
 
 
-Note: All text in bold corresponds to the input and rest corresponds to the output.
+    Note: All text in bold corresponds to the input and rest corresponds to the output.
 
-Sample Input and Output 1:
+    Sample Input and Output 1:
 
-Enter the stage event start date and end date
-27-01-2017-12
-Input dates should be in the format 'dd-MM-yyyy-HH:mm:ss'
+    Enter the stage event start date and end date
+    27-01-2017-12
+    Input dates should be in the format 'dd-MM-yyyy-HH:mm:ss'
 
-Sample Input and Output 2:
+    Sample Input and Output 2:
 
-Enter the stage event start date and end date
-27-01-2017-12:0:0
-28-01-2017-12:0:0
-Start date:27-01-2017-12:00:00
-End date:28-01-2017-12:00:00
+    Enter the stage event start date and end date
+    27-01-2017-12:0:0
+    28-01-2017-12:0:0
+    Start date:27-01-2017-12:00:00
+    End date:28-01-2017-12:00:00
 ```java title="Main.java"
 import java.text.ParseException;
 import java.time.LocalDateTime;
@@ -360,60 +360,60 @@ public class Main {
 
 ```
 ### 2
-Weak password Exception
-A typical requirement of a custom exception would be for validation purposes. In this exercise, Let's validate a password input. A password is said to be strong if it satisfies the following criteria
-    i)  It should be a minimum of 10 characters and a maximum of 20 characters.
-    ii) It should contain at least one digit.
-    iii)It should contain at least one special character (non-numeric, non-alphabetic).
-    iv)It should contain at least one letter.
+    Weak password Exception
+    A typical requirement of a custom exception would be for validation purposes. In this exercise, Let's validate a password input. A password is said to be strong if it satisfies the following criteria
+        i)  It should be a minimum of 10 characters and a maximum of 20 characters.
+        ii) It should contain at least one digit.
+        iii)It should contain at least one special character (non-numeric, non-alphabetic).
+        iv)It should contain at least one letter.
 
-If the password fails any one of the criteria, it is considered as weak.
+    If the password fails any one of the criteria, it is considered as weak.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create a class called User with the following private attributes.
+    Create a class called User with the following private attributes.
 
-Attributes	Datatype
-name	String
-mobile	String
-username	String
-password	String
- 
+    Attributes	Datatype
+    name	String
+    mobile	String
+    username	String
+    password	String
+    
 
-Include getters and setters.
-Include default and parameterized constructors.
-Format for the parameterized constructor is User(String name, String mobile, String username, String password)
-Override the toString() method to display the User detail 
+    Include getters and setters.
+    Include default and parameterized constructors.
+    Format for the parameterized constructor is User(String name, String mobile, String username, String password)
+    Override the toString() method to display the User detail 
 
-Create a class called UserBO with the following methods.
+    Create a class called UserBO with the following methods.
 
-Method 	Description
-static void validate(User u)	This method throws WeakPasswordNumber exception if the Password is weak.
- 
+    Method 	Description
+    static void validate(User u)	This method throws WeakPasswordNumber exception if the Password is weak.
+    
 
-Create a driver class called Main. In the Main method, obtain inputs from the user. Validate the password and if there is an exception, handle the exception.
+    Create a driver class called Main. In the Main method, obtain inputs from the user. Validate the password and if there is an exception, handle the exception.
 
-Pass the exception message as "Your password is weak".
+    Pass the exception message as "Your password is weak".
 
-Sample Input and Output:
-Refer to sample Input and Output for formatting specifications.
+    Sample Input and Output:
+    Refer to sample Input and Output for formatting specifications.
 
-Note: All text in bold corresponds to the input and rest corresponds to the output.
+    Note: All text in bold corresponds to the input and rest corresponds to the output.
 
-Sample Input and Output 1:
+    Sample Input and Output 1:
 
-Enter the user details
-John Doe,9876543210,john,johndoe
-WeakPasswordException: Your password is weak
+    Enter the user details
+    John Doe,9876543210,john,johndoe
+    WeakPasswordException: Your password is weak
 
-Sample Input and Output 2:
+    Sample Input and Output 2:
 
-Enter the user details
-Jane doe,9876543210,Jane,Janedoe@123
-Name:Jane doe
-Mobile:9876543210
-Username:Jane
-Password:Janedoe@123
+    Enter the user details
+    Jane doe,9876543210,Jane,Janedoe@123
+    Name:Jane doe
+    Mobile:9876543210
+    Username:Jane
+    Password:Janedoe@123
 ```java title="Main.java"
 import java.util.Scanner;
 

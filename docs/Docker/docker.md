@@ -730,7 +730,7 @@ To leave the Swarm on a node:
 ```bash
 docker swarm leave
 ```
-# Q/A
+## Q/A
     If we want to create a Docker image without using a specific base image but include Node.js and npm, you would need to manually provide the necessary files. 
     
     Here's a basic example :

@@ -1,59 +1,59 @@
 # Language Fundamentals
 ## 1
-ROBOT
+	ROBOT
 
- 
+	
 
-Think that you are a scientist and you have invented a Humanoid Robo.
-
-
-
-You want to introduce your Robo in a public meeting.
+	Think that you are a scientist and you have invented a Humanoid Robo.
 
 
 
+	You want to introduce your Robo in a public meeting.
 
-You need to feed the information that the Robo has to speak in the public meeting.So feed the basic information into the Robo using a program.
 
-NOTE: The basic information includes the name of the Robo, creator, purpose of creation, Memory space of the Robo and its speed.
 
-Input and Output Format:
 
-Input consists of name (char array), creator (char array), purpose (char array), memory space (int), speed (float) and the output format is to display all the details in correct order. Refer sample input and output for further details.
+	You need to feed the information that the Robo has to speak in the public meeting.So feed the basic information into the Robo using a program.
 
-[All text in bold corresponds to input and the rest corresponds to output]
+	NOTE: The basic information includes the name of the Robo, creator, purpose of creation, Memory space of the Robo and its speed.
 
-Sample Input and output:
+	Input and Output Format:
 
-Enter the Name :
+	Input consists of name (char array), creator (char array), purpose (char array), memory space (int), speed (float) and the output format is to display all the details in correct order. Refer sample input and output for further details.
 
-Chitti
+	[All text in bold corresponds to input and the rest corresponds to output]
 
-Enter the Creator Name :
+	Sample Input and output:
 
-Dr.Vasegran
+	Enter the Name :
 
-Enter the Purpose :
+	Chitti
 
-militaryservice
+	Enter the Creator Name :
 
-Memory Space :
+	Dr.Vasegran
 
-22
+	Enter the Purpose :
 
-Speed :
+	militaryservice
 
-1.1
+	Memory Space :
 
-My Details :
+	22
 
-I am the Robot named Chitti.
+	Speed :
 
-I was created by Dr.Vasegran.
+	1.1
 
-I am created for the purpose of militaryservice.
+	My Details :
 
-My memory space is around 22Gb and my speed is 1.1Tb
+	I am the Robot named Chitti.
+
+	I was created by Dr.Vasegran.
+
+	I am created for the purpose of militaryservice.
+
+	My memory space is around 22Gb and my speed is 1.1Tb
 ```java title="Main.java"
 import java.util.Scanner;
 public class Main{
@@ -85,41 +85,41 @@ public class Main{
 }
 ```
 ## 2
-CALCULATE GRADE
+	CALCULATE GRADE
 
-Write a program that accepts the marks in 3 subjects of a student , calculates the average mark of the student and prints the student's grade. If the average mark is greater than or equal to 90, then the grade is 'A'. If the average mark is 80 and between 80 and 90, then the grade is 'B'. If the average mark is  70 and between 70 and 80, then the grade is 'C'. If the average mark is  60 and between 60 and 70, then the grade is 'D'. If the average mark is 50 and between 50 and 60, then the grade is 'E'. If the average mark is less than 50, then the grade is 'F'.
+	Write a program that accepts the marks in 3 subjects of a student , calculates the average mark of the student and prints the student's grade. If the average mark is greater than or equal to 90, then the grade is 'A'. If the average mark is 80 and between 80 and 90, then the grade is 'B'. If the average mark is  70 and between 70 and 80, then the grade is 'C'. If the average mark is  60 and between 60 and 70, then the grade is 'D'. If the average mark is 50 and between 50 and 60, then the grade is 'E'. If the average mark is less than 50, then the grade is 'F'.
 
-Input Format:
+	Input Format:
 
-Input consists of 3 lines. Each line consists of an integer.
+	Input consists of 3 lines. Each line consists of an integer.
 
-Output Format:
+	Output Format:
 
-Output consists of a single line. Refer sample output for the format.
+	Output consists of a single line. Refer sample output for the format.
 
-Sample Input 1 :
+	Sample Input 1 :
 
-45
+	45
 
-45
+	45
 
-45
+	45
 
-Sample Output 1 :
+	Sample Output 1 :
 
-The grade is F
+	The grade is F
 
-Sample Input 2:
+	Sample Input 2:
 
-91
+	91
 
-95
+	95
 
-100
+	100
 
-Sample Output 2:
+	Sample Output 2:
 
-The grade is A
+	The grade is A
 ```java title="Main.java"
 import java.util.*;
 public class Main {
@@ -157,81 +157,81 @@ public class Main {
 }
 ```
 ## 3
-EarthQuake11
+	EarthQuake11
 
-Mr. Ram is a very rich businessman and he  lost his family in the Gujarat Earthquake. He lost interest in his business after the tragic incident and he decided to serve the society. He started an NGO named after his only son Santosh to help the earth-quake victims. Santosh Helpline will provide a compensation to all earth quake survivors.
+	Mr. Ram is a very rich businessman and he  lost his family in the Gujarat Earthquake. He lost interest in his business after the tragic incident and he decided to serve the society. He started an NGO named after his only son Santosh to help the earth-quake victims. Santosh Helpline will provide a compensation to all earth quake survivors.
 
-The compensation amount given to the survivors is not fixed and it depends on the intensity of the earthquake.
+	The compensation amount given to the survivors is not fixed and it depends on the intensity of the earthquake.
 
-The expression Richter magnitude scale refers to a number of ways to assign a single number to quantify the energy contained in an earthquake.
+	The expression Richter magnitude scale refers to a number of ways to assign a single number to quantify the energy contained in an earthquake.
 
- 
+	
 
-Earthquake Magnitude Scale
+	Earthquake Magnitude Scale
 
-Magnitude
+	Magnitude
 
-Type
+	Type
 
-2.4 or less
+	2.4 or less
 
-Micro
+	Micro
 
-2.5 to 5.4
+	2.5 to 5.4
 
-Light
+	Light
 
-5.5 to 6.0
+	5.5 to 6.0
 
-Moderate
+	Moderate
 
-6.1 to 6.9
+	6.1 to 6.9
 
-Strong
+	Strong
 
-7.0 to 7.9
+	7.0 to 7.9
 
-Major
+	Major
 
-8.0 or greater
+	8.0 or greater
 
-Great
+	Great
 
-Please help Ram to decide the intensity of the earthquake.
+	Please help Ram to decide the intensity of the earthquake.
 
- 
+	
 
-Input Format:
+	Input Format:
 
-Input consists of a single floating point number which corresponds to the earthquake's ritcher magnitude scale.
+	Input consists of a single floating point number which corresponds to the earthquake's ritcher magnitude scale.
 
- 
+	
 
-Ouput Format:
+	Ouput Format:
 
-Output consists of the string “Micro” or “Light” or “Moderate” or “Strong” or “Major” or Great”
+	Output consists of the string “Micro” or “Light” or “Moderate” or “Strong” or “Major” or Great”
 
-Refer sample input and output for further formatting specifications.
+	Refer sample input and output for further formatting specifications.
 
-[All text in bold corresponds to input and the rest corresponds to output]
+	[All text in bold corresponds to input and the rest corresponds to output]
 
-Sample Input and Output 1:
+	Sample Input and Output 1:
 
-Richter Magnitude:
+	Richter Magnitude:
 
-5.7
+	5.7
 
-Moderate
+	Moderate
 
- 
+	
 
-Sample Input and Output 2:
+	Sample Input and Output 2:
 
-Richter Magnitude:
+	Richter Magnitude:
 
-5
+	5
 
-Light
+	Light
 
  
 ```java title="Main.java"
@@ -268,37 +268,37 @@ public class Main{
 
 ```
 ## 4
-LIST OF PRIME NUMBERS
+	LIST OF PRIME NUMBERS
 
- 
+	
 
-To speed up his composition of generating unpredictable rhythms, A.R.Rahman wants the list of prime numbers available in a range of numbers.
+	To speed up his composition of generating unpredictable rhythms, A.R.Rahman wants the list of prime numbers available in a range of numbers.
 
-Can you help him out?
+	Can you help him out?
 
-Write a program to print all prime numbers in the interval [a,b] (a and b, both inclusive).
+	Write a program to print all prime numbers in the interval [a,b] (a and b, both inclusive).
 
-Use a minimum of one for loop and one while loop
+	Use a minimum of one for loop and one while loop
 
 
-Input Format:
+	Input Format:
 
-Input consists of 2 integers which correspond to a and b. Assume that a is always less than or equal to b.
+	Input consists of 2 integers which correspond to a and b. Assume that a is always less than or equal to b.
 
- 
+	
 
-Output Format:
+	Output Format:
 
-Refer sample output for details.
+	Refer sample output for details.
 
- 
+	
 
-Sample Input 1:
-2
-15
+	Sample Input 1:
+	2
+	15
 
-Sample Output 1:
-2 3 5 7 11 13
+	Sample Output 1:
+	2 3 5 7 11 13
 ```java title="Main.java"
 import java.util.*;
 import java.lang.Math;
@@ -337,32 +337,32 @@ public class Main {
 ```
 ## iAssess
 ### 1
-Largest of three numbers using Ternary Operator
+	Largest of three numbers using Ternary Operator
 
-Write a program to find greatest of three numbers , using Ternary Operator.
+	Write a program to find greatest of three numbers , using Ternary Operator.
 
-Input Format:
-The input consists of 3 integers.
-Output Format:
-Output should display the greatest of the 3 numbers.  
+	Input Format:
+	The input consists of 3 integers.
+	Output Format:
+	Output should display the greatest of the 3 numbers.  
 
-Refer sample input and output for formatting specifications.
-[All text in bold corresponds to input and the rest corresponds to output] 
+	Refer sample input and output for formatting specifications.
+	[All text in bold corresponds to input and the rest corresponds to output] 
 
 
-Sample Input and Output 1:
-Enter the numbers :
-5
-8
-2
-8 is the greatest number
+	Sample Input and Output 1:
+	Enter the numbers :
+	5
+	8
+	2
+	8 is the greatest number
 
-Sample Input and Output 2:
-Enter the numbers :
-44
-16
-23
-44 is the greatest number
+	Sample Input and Output 2:
+	Enter the numbers :
+	44
+	16
+	23
+	44 is the greatest number
 ```java title="Main.java"
 public class Main {
     
@@ -370,35 +370,35 @@ public class Main {
 
 ```
 ### 2
-Reverse of a number
+	Reverse of a number
 
- 
+	
 
-Write a program to reverse the digits of a number.
+	Write a program to reverse the digits of a number.
 
- 
+	
 
-Input format :
+	Input format :
 
-Input consists of an integer value.
+	Input consists of an integer value.
 
-Output format :
+	Output format :
 
-Output consists of the reverse of the given number.
+	Output consists of the reverse of the given number.
 
-[ Refer Sample Input and Output for further details ]
-[ All text of bold corresponds to Input and the rest output]
+	[ Refer Sample Input and Output for further details ]
+	[ All text of bold corresponds to Input and the rest output]
 
-Sample Input and Output 1 :
-Enter the number :
-5642
-Reverse of the number is 2465
+	Sample Input and Output 1 :
+	Enter the number :
+	5642
+	Reverse of the number is 2465
 
-Sample Input and Output 2 :
+	Sample Input and Output 2 :
 
-Enter the number :
-144
-Reverse of the number is 441
+	Enter the number :
+	144
+	Reverse of the number is 441
 ```java title="Main.java"
 public class Main {
     

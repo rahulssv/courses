@@ -1,46 +1,46 @@
 # Multi-threading
 ## 1
-Article count
- 
-Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. Each part of such a program is called a thread. The threads are light-weight processes within a process.
+    Article count
+    
+    Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. Each part of such a program is called a thread. The threads are light-weight processes within a process.
 
-Let's have a quick look at the way threads work in Java. For multi-threading to work, the class that will be invoked as a thread should extend the Thread class. You may wonder, what is the use of multi-threading. Let's understand it by the following exercise. Given 'n' number of lines of text, you have to find the total number of articles present in the given lines. while obtaining inputs from the user, the Main method has the full control of the execution.
+    Let's have a quick look at the way threads work in Java. For multi-threading to work, the class that will be invoked as a thread should extend the Thread class. You may wonder, what is the use of multi-threading. Let's understand it by the following exercise. Given 'n' number of lines of text, you have to find the total number of articles present in the given lines. while obtaining inputs from the user, the Main method has the full control of the execution.
 
-The time is wasted in input gathering, which can be invaluable for large computing applications, has to be utilized properly. Hence a thread is invoked when a line is obtained and the articles are counted while the input for the subsequent lines is obtained from the user. Thus threading can increase efficiency and time constraints.
+    The time is wasted in input gathering, which can be invaluable for large computing applications, has to be utilized properly. Hence a thread is invoked when a line is obtained and the articles are counted while the input for the subsequent lines is obtained from the user. Thus threading can increase efficiency and time constraints.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create a class called Article which extends the Thread class with the following private attributes.
+    Create a class called Article which extends the Thread class with the following private attributes.
 
-Attributes	Datatype
-line	String
-count	Integer
- 
-Include appropriate getters and setters.
-Generate default and parameterized constructors. The format for the parameterized constructor is Article(String line)
+    Attributes	Datatype
+    line	String
+    count	Integer
+    
+    Include appropriate getters and setters.
+    Generate default and parameterized constructors. The format for the parameterized constructor is Article(String line)
 
-The Article class includes the following methods
+    The Article class includes the following methods
 
-Method 	Description
-void run()	This method counts the number of articles in a given line and stores the value in the count variable.
+    Method 	Description
+    void run()	This method counts the number of articles in a given line and stores the value in the count variable.
 
-Create a driver class called Main. In the Main method, invoke 'n' threads for 'n' lines of input and compute the total count of the articles in the given lines.
+    Create a driver class called Main. In the Main method, invoke 'n' threads for 'n' lines of input and compute the total count of the articles in the given lines.
 
-Input and Output format:
-Refer to sample Input and Output for formatting specifications.
+    Input and Output format:
+    Refer to sample Input and Output for formatting specifications.
 
-[All text in bold corresponds to the input and rest corresponds to the output]
-Sample Input and Output:
+    [All text in bold corresponds to the input and rest corresponds to the output]
+    Sample Input and Output:
 
-Enter the number of lines
-3
-Enter line 1
-An article is a word used to modify a noun, which is a person, place, object, or idea.
-Enter line 2
-Technically, an article is an adjective, which is any word that modifies a noun.
-Enter line 3
-There are two different types of articles.
-There are 7 articles in the given input
+    Enter the number of lines
+    3
+    Enter line 1
+    An article is a word used to modify a noun, which is a person, place, object, or idea.
+    Enter line 2
+    Technically, an article is an adjective, which is any word that modifies a noun.
+    Enter line 3
+    There are two different types of articles.
+    There are 7 articles in the given input
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -112,64 +112,64 @@ public class Article extends Thread  {
 }
 ```
 ## 2
-City Count
+    City Count
 
-Now we are gonna use threading in a small part of our application. The users can be from any city. So get the user details in the console and count the number of users from each city.
+    Now we are gonna use threading in a small part of our application. The users can be from any city. So get the user details in the console and count the number of users from each city.
 
-Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+    Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
 
-Create a class User with the following private attributes
-Attributes	Datatype
-name	String
-mobileNumber	String
-city	String
-state	String
- 
-Include appropriate getters and setters
-Create Default and Parameterized Constructor as User(String name, String mobileNumber, String city, String state) for the class.
+    Create a class User with the following private attributes
+    Attributes	Datatype
+    name	String
+    mobileNumber	String
+    city	String
+    state	String
+    
+    Include appropriate getters and setters
+    Create Default and Parameterized Constructor as User(String name, String mobileNumber, String city, String state) for the class.
 
-Create a class CityCount extends Thread with the following private attribute,
+    Create a class CityCount extends Thread with the following private attribute,
 
-Attributes	Datatype
-city	String
-count	Integer
-userList	List<User>
-Call a thread class for each city and count the number of users in that city.
+    Attributes	Datatype
+    city	String
+    count	Integer
+    userList	List<User>
+    Call a thread class for each city and count the number of users in that city.
 
-Create constructor as public CityCount(String city, ArrayList<User> userList) and create appropriate getters and setters.
+    Create constructor as public CityCount(String city, ArrayList<User> userList) and create appropriate getters and setters.
 
-When creating CityCount object initialize count as zero.
-Create a driver class Main and use the main method.
+    When creating CityCount object initialize count as zero.
+    Create a driver class Main and use the main method.
 
-Input and Output format:
-Refer to Sample Input and Output for other further details and format of the output.
+    Input and Output format:
+    Refer to Sample Input and Output for other further details and format of the output.
 
-[All Texts in bold corresponds to the input and rest are output]
-Sample Input and Output 1:
+    [All Texts in bold corresponds to the input and rest are output]
+    Sample Input and Output 1:
 
-Enter the number of users:
-5
-Enter the details of user 1
-John,123456,Banglore,Karnataka
-Enter the details of user 2
-Jane,23456,Hyderabad,Telungana
-Enter the details of user 3
-Jim,56789,Chennai,Tamil Nadu
-Enter the details of user 4
-June,45678,Chennai,Tamil Nadu
-Enter the details of user 5
-James,13579,Banglore,Karnataka
-Enter the number of cities:
-3
-Enter the name of city 1
-Chennai
-Enter the name of city 2
-Banglore
-Enter the name of city 3
-Hyderabad
-Chennai--2
-Banglore--2
-Hyderabad--1
+    Enter the number of users:
+    5
+    Enter the details of user 1
+    John,123456,Banglore,Karnataka
+    Enter the details of user 2
+    Jane,23456,Hyderabad,Telungana
+    Enter the details of user 3
+    Jim,56789,Chennai,Tamil Nadu
+    Enter the details of user 4
+    June,45678,Chennai,Tamil Nadu
+    Enter the details of user 5
+    James,13579,Banglore,Karnataka
+    Enter the number of cities:
+    3
+    Enter the name of city 1
+    Chennai
+    Enter the name of city 2
+    Banglore
+    Enter the name of city 3
+    Hyderabad
+    Chennai--2
+    Banglore--2
+    Hyderabad--1
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -266,30 +266,30 @@ public class CityCount extends Thread{
 
 ```
 ## iAssess
-Character Frequency - Multiple Threads
+    Character Frequency - Multiple Threads
 
-Your English literature friend is very happy with the code you gave him. Now for his research, he used your application to find character frequency in many novels. For larger novels, the application takes a lot of time for computation. So he called you on a fine Sunday to discuss this with you. He wanted to know whether you can improve the speed of the application.
+    Your English literature friend is very happy with the code you gave him. Now for his research, he used your application to find character frequency in many novels. For larger novels, the application takes a lot of time for computation. So he called you on a fine Sunday to discuss this with you. He wanted to know whether you can improve the speed of the application.
 
-You decided to modify the application by using multiple threads to reduce the computation time. For this, accept the number of counters or threads at the beginning of the problem and get the string for each counter or thread. Create a thread by extending the Thread class and take the user entered string as input. Each thread calculates the character frequency for the word assigned to that thread. All the counts are stored locally in the thread and once all the threads are completed print the character frequency for each of the threads.
+    You decided to modify the application by using multiple threads to reduce the computation time. For this, accept the number of counters or threads at the beginning of the problem and get the string for each counter or thread. Create a thread by extending the Thread class and take the user entered string as input. Each thread calculates the character frequency for the word assigned to that thread. All the counts are stored locally in the thread and once all the threads are completed print the character frequency for each of the threads.
 
-Create a class Main.
+    Create a class Main.
 
-Input and Output format:
-Refer to sample Input and Output for formatting specifications.
+    Input and Output format:
+    Refer to sample Input and Output for formatting specifications.
 
-Sample input and output:
-[All Texts in bold corresponds to the input and rest are output]
+    Sample input and output:
+    [All Texts in bold corresponds to the input and rest are output]
 
-Enter Number of Counters :
-2
-Enter text for counter 1 :
-FrequencyCounter
-Enter text for counter 2 :
-JavaTheCompleteReference
-Counter 1 Result :
-C:1 F:1 c:1 e:3 n:2 o:1 q:1 r:2 t:1 u:2 y:1
-Counter 2 Result :
-C:1 J:1 R:1 T:1 a:2 c:1 e:7 f:1 h:1 l:1 m:1 n:1 o:1 p:1 r:1 t:1 v:1
+    Enter Number of Counters :
+    2
+    Enter text for counter 1 :
+    FrequencyCounter
+    Enter text for counter 2 :
+    JavaTheCompleteReference
+    Counter 1 Result :
+    C:1 F:1 c:1 e:3 n:2 o:1 q:1 r:2 t:1 u:2 y:1
+    Counter 2 Result :
+    C:1 J:1 R:1 T:1 a:2 c:1 e:7 f:1 h:1 l:1 m:1 n:1 o:1 p:1 r:1 t:1 v:1
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Scanner;

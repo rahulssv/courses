@@ -1,38 +1,38 @@
 # AJAX
 ## iDesign
-Ajax – JSON Retrieval and updating JSON data
+  Ajax – JSON Retrieval and updating JSON data
 
-Write a javascript code to display and update the Student details using JSON data.
+  Write a javascript code to display and update the Student details using JSON data.
 
-UI Constraints:   
+  UI Constraints:   
 
-The file name should be index.html
-Get the details from the JSON data and display them in the table.
-Retrieve the table data from JSON during body onload and the function name should be display( ).
-Have a heading text 'Student Details' inside the 'h2' tag.
-The JSON file name should be Students.json
-After providing inputs and clicking the Update button, the Student table data should be updated.
-Kindly give the id’s and class names as per the constraints and screenshot.
-Use XMLHttpRequest to make Ajax call.
-Note :
+  The file name should be index.html
+  Get the details from the JSON data and display them in the table.
+  Retrieve the table data from JSON during body onload and the function name should be display( ).
+  Have a heading text 'Student Details' inside the 'h2' tag.
+  The JSON file name should be Students.json
+  After providing inputs and clicking the Update button, the Student table data should be updated.
+  Kindly give the id’s and class names as per the constraints and screenshot.
+  Use XMLHttpRequest to make Ajax call.
+  Note :
 
-The content of the page should be present as shown in the screenshot.
-If you are using createElement() in the table, then use createTextNode() instead of innerText.
-Use ‘var’ instead of ‘let’ in the variable declaration.
+  The content of the page should be present as shown in the screenshot.
+  If you are using createElement() in the table, then use createTextNode() instead of innerText.
+  Use ‘var’ instead of ‘let’ in the variable declaration.
 
-Sample Screenshot 1:
-
-
-
-Sample Screenshot 2:
+  Sample Screenshot 1:
 
 
 
-Sample Screenshot 3: (Provide the inputs to update)
+  Sample Screenshot 2:
 
 
 
-Sample Screenshot 4: (After the Email for the first Student)
+  Sample Screenshot 3: (Provide the inputs to update)
+
+
+
+  Sample Screenshot 4: (After the Email for the first Student)
 
 ```html title="index.html"
 <!DOCTYPE html>
@@ -269,35 +269,35 @@ Sample Screenshot 4: (After the Email for the first Student)
     ]
 ```
 ## iAssess
-Ajax – JSON Retrieval and JSON Conversion
+  Ajax – JSON Retrieval and JSON Conversion
 
-Design a webpage that will get the JSON details from a file and display it in a table. Then, display the Input fields to convert the particular booklist into a JSON format.
+  Design a webpage that will get the JSON details from a file and display it in a table. Then, display the Input fields to convert the particular booklist into a JSON format.
 
-Problem specification:
+  Problem specification:
 
-The file name should be index.html.
-Get the details from the JSON data and display them in the table.
-Then displays the table data in the object notation format.
-UI Constraints :
-Retrieve the table data from JSON during body onload and the function name should be loadJson( ).
-Have a heading text 'Book List' inside the 'h1' tag.
-The JSON file name should be booklist.json
-Have a div tag with id “booklist”. And display the result table inside the div with id 'booklist'.
-Parse the JSON elements and display them in tabular form as shown in the screenshot.
-Have a button with id “convertToJSON” . While on clicking, the JSON format of entered book details should be displayed inside the div tag with id ‘jsonData’.
-Kindly give the id’s and class names as per the constraints and screenshot.
-Use XMLHttpRequest to make Ajax call.
-Note :
+  The file name should be index.html.
+  Get the details from the JSON data and display them in the table.
+  Then displays the table data in the object notation format.
+  UI Constraints :
+  Retrieve the table data from JSON during body onload and the function name should be loadJson( ).
+  Have a heading text 'Book List' inside the 'h1' tag.
+  The JSON file name should be booklist.json
+  Have a div tag with id “booklist”. And display the result table inside the div with id 'booklist'.
+  Parse the JSON elements and display them in tabular form as shown in the screenshot.
+  Have a button with id “convertToJSON” . While on clicking, the JSON format of entered book details should be displayed inside the div tag with id ‘jsonData’.
+  Kindly give the id’s and class names as per the constraints and screenshot.
+  Use XMLHttpRequest to make Ajax call.
+  Note :
 
-The content of the page should be present as shown in the screenshot.
-If you are using createElement() in the table, then use createTextNode() instead of innerText.
-Use ‘var’ instead of ‘let’ in the variable declaration.
+  The content of the page should be present as shown in the screenshot.
+  If you are using createElement() in the table, then use createTextNode() instead of innerText.
+  Use ‘var’ instead of ‘let’ in the variable declaration.
 
-Sample Screenshot 1:
+  Sample Screenshot 1:
 
 
 
-Sample Screenshot 2 :
+  Sample Screenshot 2 :
 
 ```html title="index.html"
 <!DOCTYPE html>
