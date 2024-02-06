@@ -401,6 +401,7 @@
 </html>
 
 ```
+
 ```css tiitle="style.css"
 h1 {
     text-align: center;
@@ -470,6 +471,7 @@ h1 {
       border: 1px solid gray;
   }
 ```
+
 ```json title="booklist.json"
 [
     {
