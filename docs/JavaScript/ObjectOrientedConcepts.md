@@ -39,6 +39,7 @@
     Output:
 
     Name is too short
+
 ```js title="app.js"
 var fs = require('fs');
 var input=fs.readFileSync('input.txt').toString().trim().split('\n');
@@ -111,6 +112,7 @@ Harina
     Output:
 
     Neither Prime nor Composite
+
 ```js title="app.js"
 
 //fill your code
@@ -170,6 +172,7 @@ exports.value=value
     Name : John
     Department : HR
     DOJ : 23-8-1997
+
 ```js title="app.js"
 var fs = require('fs');
 var input=fs.readFileSync('input.txt').toString().trim().split('\n');
