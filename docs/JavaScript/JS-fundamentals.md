@@ -32,6 +32,7 @@
 
     Output:
     Not Allowed
+
 ```js title="app.js"
 var fs = require('fs');
 var input = fs.readFileSync('input.txt').toString();
@@ -85,6 +86,7 @@ return true;
     Output 2:
 
     A gross creature is not a palindrome
+
 ```js title="app.js"
 var fs = require('fs');
 var input1 = fs.readFileSync('input.txt').toString();
@@ -124,6 +126,7 @@ Taco cat
     Sample Output :
 
     120
+
 ```js title="app.js"
 var fs=require('fs');
 var input=fs.readFileSync('input.txt').toString().trim();

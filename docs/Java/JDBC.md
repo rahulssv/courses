@@ -102,6 +102,7 @@ public class DBConnection {
     Id       Title          Category       Author      Price
     1        Vampire Dairy  Fiction       Chetan      150.0
     2        Harry potter   Witchcraft    Rowling     450.0
+
 ```java title="oraclescript.sql"
 begin
    execute immediate 'drop table travel_class';
@@ -554,6 +555,7 @@ public class TravelClassDAO {
     COK        Cochin International Airport             Cochin     India
     MDZ        Francisco Gabriell International Airport Mendoza    Arizona
     SXR        Srinagar International Airport           Srinagar   India
+
 ```java title="Main.java"
 import java.io.*;
 import java.util.ArrayList;
@@ -813,6 +815,7 @@ public class AirportDAO {
     Id              Name            Email           Password        Age             Role            CreatedDate     Status         
     2               Rahul           rh@a.com        rh@123          15              user            2015-10-14      Approved       
     3               Ravi            rv@a.com        rv@98           20              user            2015-10-14      pending
+
 ```java title="Main.java"
 import java.util.*;
 import java.io.*;

@@ -29,6 +29,7 @@
     Enter the department name:
     Physics
     Jane is working in the Physics department as Associate Professor
+
 ```java title="Main.java"
 import java.util.*;
 public class Main {
@@ -155,6 +156,7 @@ public class Department {
     Account Number:131231451
     Bank Name:ICICI
     TIN Number:798902
+
 ```java title="Main.java"
 import java.util.*;
 public class Main {
@@ -577,6 +579,7 @@ public class RTGSTransfer extends FundTransfer {
     Enter the ending date of the event:
     09-01-2018
     The GST to be paid is Rs.30000.0
+
 ```java title="Main.java"
 import java.text.DecimalFormat;
 import java.time.LocalDate;
@@ -902,6 +905,7 @@ public class StageEvent extends Event{
     3)Executive Stall
     4
     Invalid Stall Type
+
 ```java title="Main.java"
 import java.util.Scanner;
 public class Main {

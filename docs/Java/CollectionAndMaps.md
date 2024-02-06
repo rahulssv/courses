@@ -1,6 +1,6 @@
 # Collections And Maps
 ## 1
-**`contains() & indexOf() methods in ArrayList`**
+    **`contains() & indexOf() methods in ArrayList`**
     Write a program to get the hall details and store in the ArrayList and search the hall and display it's position details.
 
     Get hall names in the Main class and store it an ArrayList.
@@ -44,6 +44,7 @@
     Enter the hall name to be searched:
     SPK
     SPK hall is not found
+
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -384,6 +385,7 @@ public class Address {
     User 2
     User Name = Saroja
     Bank Name = Karur vysya Bank
+
 ```java title="Main.java"
 import java.util.*;
 
@@ -561,6 +563,7 @@ public class User implements Comparable<User> {
     mohan Raja          9874563210          mohan               mohan@abc.in        
     prakash raj         7548921445          prakash             raj@abc.in          
     Ram ganesh          9874587457          Ram                 ramg@abc.in
+
 ```java title="Main.java"
 import java.util.*;
 
@@ -739,6 +742,7 @@ public class UserBO extends ArrayList<User>{
     State:Tamil Nadu
     City:Coimbatore Count:1
     City:Madurai Count:2
+
 ```java title="Main.java"
 import java.util.*;
 

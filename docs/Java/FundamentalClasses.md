@@ -33,6 +33,7 @@
     Enter the string to be found in the data
         Birbal
     String is not found in the document
+
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -98,6 +99,7 @@ public class Main {
     Wallets,Leather,1200,Available
     Notebooks,Papers,200,Not Available
     Headphones,Electronics,800,Available
+
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -205,6 +207,7 @@ public class Item {
     Date Format with EEE, MMM d, yy : Sun, Oct 20, 96
     Date Format with dd.MM.yyyy : 20.10.1996
     Date Format with dd dd/MM/yyyy : 20/10/1996
+
 ```java title="Main.java"
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -254,6 +257,7 @@ public class Main {
     MB12345
     Formatted code
     MUB12345
+
 ```java title="Main.java"
 import java.util.*;
 
@@ -331,6 +335,7 @@ public class Main {
     Christmas Party,22/01/2000,25/02/2000
     1-day Events:
     No Events
+
 ```java title="Main.java"
 import java.util.*;
 import java.text.*;
@@ -387,9 +392,6 @@ public class Main {
 		scanner.close();
 	}
 }
-
-
-
 
 ```
 ```java title="Event.java"

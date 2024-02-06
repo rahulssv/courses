@@ -53,6 +53,7 @@
     Enter salary
     25000
     Expenses exceeds Salary
+
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -164,6 +165,7 @@ public class Expenses {
     Hip Hop,Wright Brothers,300000
     Jaqulos|Einstein|1230000.0
     Hip Hop|Wright Brothers|300000.0
+
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -285,6 +287,7 @@ public class Event {
     Mohan      1               160.0          
     Collin     2               210.0          
     Ravi       4               320.0
+
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Collections;

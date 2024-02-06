@@ -44,6 +44,7 @@
     Enter the deposit:
     One thousand
     java.lang.NumberFormatException: For input string: "One thousand"
+
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -143,6 +144,7 @@ public class ItemType {
     Enter the seat number 2
     101
     java.lang.ArrayIndexOutOfBoundsException: 100
+
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -227,6 +229,7 @@ public class Main {
     LandLine:0447896541
     Email:johndoe@abc.in
     Address:22nd lane RR nagar kovai
+
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -329,6 +332,7 @@ public class DuplicateMobileNumberException extends Exception {
     28-01-2017-12:0:0
     Start date:27-01-2017-12:00:00
     End date:28-01-2017-12:00:00
+
 ```java title="Main.java"
 import java.text.ParseException;
 import java.time.LocalDateTime;
@@ -414,6 +418,7 @@ public class Main {
     Mobile:9876543210
     Username:Jane
     Password:Janedoe@123
+
 ```java title="Main.java"
 import java.util.Scanner;
 

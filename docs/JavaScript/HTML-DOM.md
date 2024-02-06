@@ -46,6 +46,7 @@
     Template Code :
 
     Click here to download the template code.
+
 ```html title="index.html"
 <!DOCTYPE html>
 <html lang="en">
@@ -126,6 +127,7 @@ A wedding planner is a professional who assists with the design, planning and ma
     Template Code :
 
     Click here to download the template code.
+
 ```html title="index.html"
 <!DOCTYPE html>
 <html lang="en">
@@ -242,6 +244,7 @@ A wedding planner is a professional who assists with the design, planning and ma
     Sample Screenshot 4 :
     On clearing the content in textarea , the change should be reflected in the result div.`
 
+
 ```html title="index.html"
 <!DOCTYPE html>
 <html lang="en">
@@ -337,6 +340,7 @@ A wedding planner is a professional who assists with the design, planning and ma
 
 
     Sample Screenshot 8 :
+
 ```html title="index.html"
 <!DOCTYPE html>
 <html lang="en">
@@ -440,6 +444,7 @@ A wedding planner is a professional who assists with the design, planning and ma
 
     Sample Screenshot 3 :
     For the sixth doubleClick(),
+
 
 ```html title="index.html"
 <!DOCTYPE html>

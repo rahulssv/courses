@@ -1,112 +1,113 @@
 # Forms
 ## iDesign
-Forms - Registration form
+    Forms - Registration form
 
 
-Design an HTML page for the registration form as shown in the screenshot.
+    Design an HTML page for the registration form as shown in the screenshot.
 
-Hints :Tag `<select>`
-The `<select> `element is used to create a drop-down list. The `<option>` tags inside the `<select>` element define the available options in the list.
-Syntax :
-`<select> <option value="xxx"> xxx </option> <option value="yyy"> yyy </option> </select>`
+    Hints :Tag `<select>`
+    The `<select> `element is used to create a drop-down list. The `<option>` tags inside the `<select>` element define the available options in the list.
+    Syntax :
+    `<select> <option value="xxx"> xxx </option> <option value="yyy"> yyy </option> </select>`
 
-Sample Screenshot 1:
-
-
-
-Sample Screenshot 2 :
+    Sample Screenshot 1:
 
 
 
-Sample Screenshot 3 :
+    Sample Screenshot 2 :
 
 
 
-Constraints :
-
-Have two pages named index.html and display.php.
-Refer screenshot for name and value specification of fields
-Display the entered details in display.php page.
-
-Note :
-
-Content of the page should be present as shown in the screenshot.
-Kindly refer to the content which is given as a part of the description.
-
-Content :
-
-Design a simple registration form with values
-h1 - Registration form
-Use ‘textarea’ element for the address field.
-
-TextField value
-
-name
-
-type
-
-Name                   
-
-name
-
-text
-
-Username
-
-userName
-
-text
-
-Password
-
-password
-
-password
-
-Re-enter Password
-
-re-EnterPassword
-
-password
-
-Address
-
-address
-
-textarea(element)
-
-Gender
-
-gender
-
-radio
-
-District Name
-
-districtName
-
-select
-
-Events
-
-events[]
-
-checkbox
-
-Register
-
-register
-
-submit
+    Sample Screenshot 3 :
 
 
-Create a form with the above fields.
-display.php is provided in the template code.
-Design the HTML page using form and form action should be 'display.php' and the method should be 'POST'
 
-Template Code :
+    Constraints :
 
-Click here to download the template code.
+    Have two pages named index.html and display.php.
+    Refer screenshot for name and value specification of fields
+    Display the entered details in display.php page.
+
+    Note :
+
+    Content of the page should be present as shown in the screenshot.
+    Kindly refer to the content which is given as a part of the description.
+
+    Content :
+
+    Design a simple registration form with values
+    h1 - Registration form
+    Use ‘textarea’ element for the address field.
+
+    TextField value
+
+    name
+
+    type
+
+    Name                   
+
+    name
+
+    text
+
+    Username
+
+    userName
+
+    text
+
+    Password
+
+    password
+
+    password
+
+    Re-enter Password
+
+    re-EnterPassword
+
+    password
+
+    Address
+
+    address
+
+    textarea(element)
+
+    Gender
+
+    gender
+
+    radio
+
+    District Name
+
+    districtName
+
+    select
+
+    Events
+
+    events[]
+
+    checkbox
+
+    Register
+
+    register
+
+    submit
+
+
+    Create a form with the above fields.
+    display.php is provided in the template code.
+    Design the HTML page using form and form action should be 'display.php' and the method should be 'POST'
+
+    Template Code :
+
+    Click here to download the template code.
+
 ```php title="display.php"
 <!DOCTYPE html>
 <html>
@@ -225,53 +226,53 @@ $event[] = $_POST['events'];
 </html>
 ```
 ## iAssess
-Forms - maxlength
-D5 educational website which provides useful tutorials for all types of learners, has planned to maintain the database of the students and teachers who are benefited by them. The database stores information like user's name, username, password, mobile number and address. On validating the details enrolled by the users, they found many invalid entries like 12-digit mobile number, address with unwanted landmarks, etc.
+    Forms - maxlength
+    D5 educational website which provides useful tutorials for all types of learners, has planned to maintain the database of the students and teachers who are benefited by them. The database stores information like user's name, username, password, mobile number and address. On validating the details enrolled by the users, they found many invalid entries like 12-digit mobile number, address with unwanted landmarks, etc.
 
-For eliminating such entries, the creative team of D5 educational institution has appointed you to create the website which would limit the input from the user as required. Hence, create a website with input fields following certain constraints like the mobile number field must not hold more than 10 digits and the address field should not hold more than 200 characters.
-Hints :  maxlength attribute  The maxlength attribute specifies the maximum number of characters allowed in the `<input> element. Syntax :    <input maxlength="number"> `
+    For eliminating such entries, the creative team of D5 educational institution has appointed you to create the website which would limit the input from the user as required. Hence, create a website with input fields following certain constraints like the mobile number field must not hold more than 10 digits and the address field should not hold more than 200 characters.
+    Hints :  maxlength attribute  The maxlength attribute specifies the maximum number of characters allowed in the `<input> element. Syntax :    <input maxlength="number"> `
 
-Content :
-Design a html page with simple registration form
-h1 - Registration form 
-TextField value	name	textfield/textarea/button
-Name	name	textfield
-Username	username	textfield
-Password	password	textfield
-MobileNumber	mobilenumber	textfield
-Address	address	textarea
-Register	register	button
+    Content :
+    Design a html page with simple registration form
+    h1 - Registration form 
+    TextField value	name	textfield/textarea/button
+    Name	name	textfield
+    Username	username	textfield
+    Password	password	textfield
+    MobileNumber	mobilenumber	textfield
+    Address	address	textarea
+    Register	register	button
 
-Have the above textfields and a button.
-Set max attribute for the fields mobilenumber(10) and address(200).
-display.php is provided in the template code.
-Fill your code in index.html.
+    Have the above textfields and a button.
+    Set max attribute for the fields mobilenumber(10) and address(200).
+    display.php is provided in the template code.
+    Fill your code in index.html.
 
-Constraints :
-Have two pages called index.html and display.php
-Design the html page using form with action as 'display.php' and method as 'POST'
-The max attribute must be given for the mentioned fields.
-Use the names and the values as given in the screenshot.
+    Constraints :
+    Have two pages called index.html and display.php
+    Design the html page using form with action as 'display.php' and method as 'POST'
+    The max attribute must be given for the mentioned fields.
+    Use the names and the values as given in the screenshot.
 
-Note :
-Content of the page should be present as shown in the screenshot.
-Kindly refer to the content which is given as a part of the description.
+    Note :
+    Content of the page should be present as shown in the screenshot.
+    Kindly refer to the content which is given as a part of the description.
 
-Sample Screenshot 1:
-
-
-
-Sample Screenshot 2:
+    Sample Screenshot 1:
 
 
 
-Sample Screenshot 3:
+    Sample Screenshot 2:
 
 
 
-Sample Screenshot 4 :
+    Sample Screenshot 3:
 
-display.php
+
+
+    Sample Screenshot 4 :
+
+    display.php
 
 ```php title="display.php"
 <!DOCTYPE html>

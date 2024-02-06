@@ -54,6 +54,7 @@
 	I am created for the purpose of militaryservice.
 
 	My memory space is around 22Gb and my speed is 1.1Tb
+
 ```java title="Main.java"
 import java.util.Scanner;
 public class Main{
@@ -120,6 +121,7 @@ public class Main{
 	Sample Output 2:
 
 	The grade is A
+
 ```java title="Main.java"
 import java.util.*;
 public class Main {
@@ -299,6 +301,7 @@ public class Main{
 
 	Sample Output 1:
 	2 3 5 7 11 13
+
 ```java title="Main.java"
 import java.util.*;
 import java.lang.Math;
@@ -363,6 +366,7 @@ public class Main {
 	16
 	23
 	44 is the greatest number
+
 ```java title="Main.java"
 public class Main {
     
@@ -399,6 +403,7 @@ public class Main {
 	Enter the number :
 	144
 	Reverse of the number is 441
+
 ```java title="Main.java"
 public class Main {
     

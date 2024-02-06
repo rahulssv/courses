@@ -1,55 +1,56 @@
 # CSS3 Basics
 ## iDesign
 
-CSS styling - color
-Sean and Roger have joined the WebMakers company as interns. As they are beginners in the field, they were guided to get hands-on exposure about HTML and CSS concepts. The major client of their company was the Pink frag Event Organizer Company. The Company provides the leading event management services for birthday, wedding, corporate events and business conference.
+    CSS styling - color
+    Sean and Roger have joined the WebMakers company as interns. As they are beginners in the field, they were guided to get hands-on exposure about HTML and CSS concepts. The major client of their company was the Pink frag Event Organizer Company. The Company provides the leading event management services for birthday, wedding, corporate events and business conference.
 
-After their internship period, Sean and Reon's first task was to create a sample webpage for Pink frag Organizer Company. They initially used the basic black font-color for the home page which was not much appealing. Sean and Roger wants to find out the suitable font colors for the webpage but they are not so confident of implementing it.
+    After their internship period, Sean and Reon's first task was to create a sample webpage for Pink frag Organizer Company. They initially used the basic black font-color for the home page which was not much appealing. Sean and Roger wants to find out the suitable font colors for the webpage but they are not so confident of implementing it.
 
-Let us explain them the usage of color attribute by creating a webpage using color attribute in CSS.
-Hints : color attribute 
-It is used to change the color of the any element in which the styling is used. 
-Syntax :   `<h1 style="color:blue;">This is a Blue Heading</h1> `
+    Let us explain them the usage of color attribute by creating a webpage using color attribute in CSS.
+    Hints : color attribute 
+    It is used to change the color of the any element in which the styling is used. 
+    Syntax :   `<h1 style="color:blue;">This is a Blue Heading</h1> `
 
-Content :
-H1 - Pink Frag Event Organizer
-HR
-H2 - Service Description
-P - We are indulged in offering a Promotional Event Management. These services are provided by our team of professionals as per the requirement of the client. These services are highly praised for their features like sophisticated technology, effective results and reliability. We offer these services in a definite time frame and at affordable rates.
-HR
-H2 - Features
-H5 - Customized services
-H5 - On-time completion
-H5 - Execution in tandem with clients demand
-HR
-H2 - About Us
-p- Pink Frag Event is a reputed organization, which has come into being in 2009, as a Sole Proprietorship Firm, with a sole aim of achieving the trust and support of large customers. We have indulged our all endeavors towards offering trustworthy Wedding Event Management, Promotional Event Management, Birthday Party Management and many more. All our services are reliable and offered keeping the exact customers’ preferences and choice in mind. To offer these services, we have hired specialized professionals, who are capable of understanding as well as accomplishing the specific customers’ desires. `<br />` We have adopted modern technology, to cope up with the challenges of industry. We keep all quality parameters in mind, so that we cannot make any compromise in terms of the excellence of products.
-HR
-H2 - Contact Us
-H3 - Address
-p - 14/509A,Sterlin Street,Nungambakkam
-Chennai - 600034.
-H3 - Mobile
-p - Manager-9596645125
-H3 - Landline
-p - 0422-2727272
-H3 - EMail
-p - pinkfragevent123@gmail.com   pinkfragOfficial@gmail.com
+    Content :
+    H1 - Pink Frag Event Organizer
+    HR
+    H2 - Service Description
+    P - We are indulged in offering a Promotional Event Management. These services are provided by our team of professionals as per the requirement of the client. These services are highly praised for their features like sophisticated technology, effective results and reliability. We offer these services in a definite time frame and at affordable rates.
+    HR
+    H2 - Features
+    H5 - Customized services
+    H5 - On-time completion
+    H5 - Execution in tandem with clients demand
+    HR
+    H2 - About Us
+    p- Pink Frag Event is a reputed organization, which has come into being in 2009, as a Sole Proprietorship Firm, with a sole aim of achieving the trust and support of large customers. We have indulged our all endeavors towards offering trustworthy Wedding Event Management, Promotional Event Management, Birthday Party Management and many more. All our services are reliable and offered keeping the exact customers’ preferences and choice in mind. To offer these services, we have hired specialized professionals, who are capable of understanding as well as accomplishing the specific customers’ desires. `<br />` We have adopted modern technology, to cope up with the challenges of industry. We keep all quality parameters in mind, so that we cannot make any compromise in terms of the excellence of products.
+    HR
+    H2 - Contact Us
+    H3 - Address
+    p - 14/509A,Sterlin Street,Nungambakkam
+    Chennai - 600034.
+    H3 - Mobile
+    p - Manager-9596645125
+    H3 - Landline
+    p - 0422-2727272
+    H3 - EMail
+    p - pinkfragevent123@gmail.com   pinkfragOfficial@gmail.com
 
-Constraints :
-There must be one h1 tag with color '#356ecc' .
-There must be four h2 tags with color '#f9b222'.
-All tags should have seperate style attribute with color specification.
+    Constraints :
+    There must be one h1 tag with color '#356ecc' .
+    There must be four h2 tags with color '#f9b222'.
+    All tags should have seperate style attribute with color specification.
 
-Note :
-Content of the page should be present as shown in the screenshot.
-Kindly refer the content which is given as a part of description.
+    Note :
+    Content of the page should be present as shown in the screenshot.
+    Kindly refer the content which is given as a part of description.
 
-Sample Screenshot 1:
+    Sample Screenshot 1:
 
 
 
-Sample Screenshot 2:
+    Sample Screenshot 2:
+
 ```html title="index.html"
 <!DOCTYPE html>
 <html>
@@ -106,39 +107,40 @@ Sample Screenshot 2:
 
 ```
 ## iAssess
-CSS - Internal styling by id
+    CSS - Internal styling by id
 
 
-Design a webpage using Internal styling by id as shown in the screenshot.
+    Design a webpage using Internal styling by id as shown in the screenshot.
 
-Sample Screenshot :
-
-
-
-Constraints :
+    Sample Screenshot :
 
 
 
-Additional Constraints :
+    Constraints :
 
-The webpage design shall be of internal style.
-The content is given in the template itself.
-The colors shall be the same as given in the constraints.
-Use the id attribute for styling the webpage.
 
-h1 titles are in pink color(#F835C0)
-h2 titles are in red color(#ff0000)
-h3 titles are in green color(#15D365)
-h5 titles are in violet color( #9F41F5)
 
-Note :
+    Additional Constraints :
 
-Content of the page should be present as shown in the screenshot.
-Kindly refer to the content which is given as a part of the description.
+    The webpage design shall be of internal style.
+    The content is given in the template itself.
+    The colors shall be the same as given in the constraints.
+    Use the id attribute for styling the webpage.
 
-Template Code :
+    h1 titles are in pink color(#F835C0)
+    h2 titles are in red color(#ff0000)
+    h3 titles are in green color(#15D365)
+    h5 titles are in violet color( #9F41F5)
 
-Click here to download the template code.
+    Note :
+
+    Content of the page should be present as shown in the screenshot.
+    Kindly refer to the content which is given as a part of the description.
+
+    Template Code :
+
+    Click here to download the template code.
+
 ```html title="index.html"
 <!DOCTYPE html>
 <html>

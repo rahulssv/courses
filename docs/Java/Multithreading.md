@@ -41,6 +41,7 @@
     Enter line 3
     There are two different types of articles.
     There are 7 articles in the given input
+
 ```java title="Main.java"
 import java.util.Scanner;
 
@@ -170,6 +171,7 @@ public class Article extends Thread  {
     Chennai--2
     Banglore--2
     Hyderabad--1
+
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -290,6 +292,7 @@ public class CityCount extends Thread{
     C:1 F:1 c:1 e:3 n:2 o:1 q:1 r:2 t:1 u:2 y:1
     Counter 2 Result :
     C:1 J:1 R:1 T:1 a:2 c:1 e:7 f:1 h:1 l:1 m:1 n:1 o:1 p:1 r:1 t:1 v:1
+
 ```java title="Main.java"
 import java.util.ArrayList;
 import java.util.Scanner;
