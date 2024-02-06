@@ -1,4 +1,4 @@
-# Docker Assignments
+# Docker Training
 
 ## Basic Docker commands
 

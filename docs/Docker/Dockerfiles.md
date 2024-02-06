@@ -1,7 +1,9 @@
-# Dockerfile
+# Docker Demo [Communication Between Containers]
 
-## Ubuntu-DataSocket-Docker
+## Docker container with ubuntu-DataSocket
 
+### Container 1
+`Container1App.java`
 ```java title="Container1App.java"
 import java.net.*;
 
@@ -17,7 +19,24 @@ public class Container1App {
     }
 }
 ```
+`Dockerfile`
+```Dockerfile title="Dockerfile1"
+# Dockerfile for Container 1
+FROM ubuntu:latest
 
+RUN apt-get update && \
+    apt-get install -y openjdk-11-jdk
+
+WORKDIR /usr/src/app
+COPY Container1App.java .
+
+RUN javac Container1App.java
+
+CMD ["java", "Container1App"]
+```
+### Container 2
+
+`Container2App.java`
 ```java title="Container2App.java"
 import java.net.*;
 
@@ -35,22 +54,9 @@ public class Container2App {
     }
 }
 ```
-```python title="Dockerfile1"
-# Dockerfile for Container 1
-FROM ubuntu:latest
 
-RUN apt-get update && \
-    apt-get install -y openjdk-11-jdk
-
-WORKDIR /usr/src/app
-COPY Container1App.java .
-
-RUN javac Container1App.java
-
-CMD ["java", "Container1App"]
-```
-
-```python title="Dockerfile2"
+`Dockerfile`
+```Dockerfile title="Dockerfile2"
 # Dockerfile for Container 2
 FROM ubuntu:latest
 
@@ -64,7 +70,7 @@ RUN javac Container2App.java
 
 CMD ["java", "Container2App"]
 ```
-
+- Follow this commands in terminal
 ```bash title="runReceiver.sh"
 docker build -t container1-image -f Dockerfile1 . ;
 docker build -t container2-image -f Dockerfile2 . ;

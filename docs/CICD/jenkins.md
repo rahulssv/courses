@@ -1,5 +1,5 @@
-# CICD
-## Jenkins container with oc and docker
+# CICD with Jenkins
+## Jenkins container with oc and docker installed
 - First download oc cli tar file in root folder.
 - [Install OC client in Ubuntu/Debian](https://gist.github.com/mehdihasan/3399998cba54bdec78deb9be4a002acb)
 ```Dockerfile

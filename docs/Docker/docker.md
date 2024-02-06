@@ -16,10 +16,6 @@ Key components of Docker include:
   
 ## **Docker Management Commands:**
 
-Certainly! Here are some Docker management commands along with examples:
-
-### Docker Management Commands:
-
 1. **Display Docker version information:**
     ```bash
     docker version
@@ -38,10 +34,7 @@ Certainly! Here are some Docker management commands along with examples:
     # Example: docker run --help
     ```
 
-## **Image Commands:**
-Certainly! Here's a breakdown of Docker image commands with examples:
-
-### Image Commands:
+### **Image Commands:**
 
 1. **List all images on the local machine:**
     ```bash
@@ -102,8 +95,6 @@ Certainly! Here's a breakdown of Docker image commands with examples:
 
 These commands cover a range of image-related tasks, from managing and inspecting images to searching for new ones on Docker Hub.
 
-## **Container Commands:**
-Certainly! Here's a breakdown of the Docker container commands with examples:
 
 ### Container Lifecycle:
 
@@ -167,7 +158,7 @@ Certainly! Here's a breakdown of the Docker container commands with examples:
 
 ### Container Information:
 
-11. **Display detailed information about a container:**
+1. **Display detailed information about a container:**
     ```bash
     docker inspect <container>
     # Example: docker inspect my_container
@@ -193,7 +184,7 @@ Certainly! Here's a breakdown of the Docker container commands with examples:
 
 ### Container Removal:
 
-15. **Remove one or more containers:**
+1. **Remove one or more containers:**
     ```bash
     docker rm <container>
     # Example: docker rm my_container
@@ -217,7 +208,7 @@ Certainly! Here's a breakdown of the Docker container commands with examples:
 
 ### Copying Files:
 
-19. **Copy files or directories between a container and the local filesystem:**
+1. **Copy files or directories between a container and the local filesystem:**
     ```bash
     docker cp <source_path> <container>:<destination_path>
     # Example: docker cp ./local_file.txt my_container:/app/
@@ -229,9 +220,9 @@ Certainly! Here's a breakdown of the Docker container commands with examples:
     # Example: docker cp my_container:/app/container_file.txt ./local_destination/
     ```
 
-### Resource Management:
+## Resource Management:
 
-21. **Display a live stream of system resource usage statistics for all containers:**
+1. **Display a live stream of system resource usage statistics for all containers:**
     ```bash
     docker stats
     ```
@@ -245,17 +236,16 @@ Certainly! Here's a breakdown of the Docker container commands with examples:
 
 
 ## **Network Commands:**
-Here are some Docker network commands along with examples:
 
 ### List Networks:
 
-1. **`docker network ls`**: List all networks.
+1. List all networks.
 
    ```bash
    docker network ls
    ```
 
-2. **`docker network inspect <network>`**: Display detailed information about a network.
+2. Display detailed information about a network.
 
    ```bash
    docker network inspect bridge
@@ -263,13 +253,13 @@ Here are some Docker network commands along with examples:
 
 ### Create and Remove Networks:
 
-3. **`docker network create <network>`**: Create a network.
+3. Create a network.
 
    ```bash
    docker network create my_network
    ```
 
-4. **`docker network rm <network>`**: Remove one or more networks.
+4. Remove one or more networks.
 
    ```bash
    docker network rm my_network
@@ -277,13 +267,13 @@ Here are some Docker network commands along with examples:
 
 ### Connect Containers to Networks:
 
-5. **`docker network connect <network> <container>`**: Connect a container to a network.
+5. Connect a container to a network.
 
    ```bash
    docker network connect my_network my_container
    ```
 
-6. **`docker network disconnect <network> <container>`**: Disconnect a container from a network.
+6. Disconnect a container from a network.
 
    ```bash
    docker network disconnect my_network my_container
@@ -291,7 +281,7 @@ Here are some Docker network commands along with examples:
 
 ### Bridge Network:
 
-7. **`docker network create --driver bridge <network>`**: Create a user-defined bridge network.
+7. Create a user-defined bridge network.
 
    ```bash
    docker network create --driver bridge my_bridge_network
@@ -299,7 +289,7 @@ Here are some Docker network commands along with examples:
 
 ### Host Network:
 
-8. **`docker run --network host <image>`**: Run a container on the host's network stack.
+8. Run a container on the host's network stack.
 
    ```bash
    docker run --network host my_image
@@ -307,7 +297,7 @@ Here are some Docker network commands along with examples:
 
 ### Overlay Network (Swarm Mode):
 
-9. **`docker network create --driver overlay <network>`**: Create an overlay network for Swarm services.
+9. Create an overlay network for Swarm services.
 
    ```bash
    docker network create --driver overlay my_overlay_network
@@ -315,65 +305,63 @@ Here are some Docker network commands along with examples:
 
 ### Macvlan Network:
 
-10. **`docker network create --driver macvlan --subnet=<subnet> --gateway=<gateway> -o parent=<interface> <network>`**: Create a Macvlan network.
+10. Create a Macvlan network.
 
     ```bash
     docker network create --driver macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o parent=eth0 my_macvlan_network
     ```
 
-These are some common Docker network commands and examples. Docker provides various network drivers and options to suit different use cases, such as connecting containers within a host, connecting containers across hosts in a Swarm, or even creating custom bridge networks. Adjust the examples based on your specific requirements and network configurations.
 ## **Volume Commands:**
 Here are some commonly used Docker volume commands:
 
-1. **`docker volume create <volume>`**: Create a named volume.
+1. Create a named volume.
 
    ```bash
    docker volume create my_volume
    ```
 
-2. **`docker volume ls`**: List all volumes.
+2. List all volumes.
 
    ```bash
    docker volume ls
    ```
 
-3. **`docker volume inspect <volume>`**: Display detailed information about a volume.
+3. Display detailed information about a volume.
 
    ```bash
    docker volume inspect my_volume
    ```
 
-4. **`docker volume rm <volume>`**: Remove one or more volumes.
+4. Remove one or more volumes.
 
    ```bash
    docker volume rm my_volume
    ```
 
-5. **`docker volume prune`**: Remove all unused volumes.
+5. Remove all unused volumes.
 
    ```bash
    docker volume prune
    ```
 
-These commands allow you to manage Docker volumes, which are used to persist data generated by and used by Docker containers. Volumes provide a way to share data between containers, and they exist independently of the container lifecycle, making data storage more durable and flexible.
 ## **Docker Compose Commands:**
 Docker Compose is a tool for defining and running multi-container Docker applications. Here are some common Docker Compose commands along with examples:
 
 ### Basic Commands:
 
-1. **`docker-compose up`**: Start services defined in a `docker-compose.yml` file.
+1. Start services defined in a `docker-compose.yml` file.
 
     ```bash
     docker-compose up
     ```
 
-2. **`docker-compose down`**: Stop and remove containers, networks, and volumes defined in a `docker-compose.yml` file.
+2. Stop and remove containers, networks, and volumes defined in a `docker-compose.yml` file.
 
     ```bash
     docker-compose down
     ```
 
-3. **`docker-compose ps`**: List containers.
+3. List containers.
 
     ```bash
     docker-compose ps
@@ -381,19 +369,19 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ### Service Management:
 
-4. **`docker-compose start`**: Start services.
+4. Start services.
 
     ```bash
     docker-compose start
     ```
 
-5. **`docker-compose stop`**: Stop services.
+5. Stop services.
 
     ```bash
     docker-compose stop
     ```
 
-6. **`docker-compose restart`**: Restart services.
+6. Restart services.
 
     ```bash
     docker-compose restart
@@ -401,13 +389,13 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ### Logs and Status:
 
-7. **`docker-compose logs`**: View output from services.
+7. View output from services.
 
     ```bash
     docker-compose logs
     ```
 
-8. **`docker-compose top`**: Display the running processes.
+8. Display the running processes.
 
     ```bash
     docker-compose top
@@ -415,7 +403,7 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ### Scale Services:
 
-9. **`docker-compose scale`**: Scale services to a specified number of instances.
+9. Scale services to a specified number of instances.
 
     ```bash
     docker-compose scale web=3
@@ -423,7 +411,7 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ### Executing Commands in Services:
 
-10. **`docker-compose exec`**: Run a command in a service.
+10. Run a command in a service.
 
     ```bash
     docker-compose exec web ls -l
@@ -431,13 +419,13 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ### Building and Rebuilding:
 
-11. **`docker-compose build`**: Build or rebuild services.
+11. Build or rebuild services.
 
     ```bash
     docker-compose build
     ```
 
-12. **`docker-compose pull`**: Pull service images.
+12. Pull service images.
 
     ```bash
     docker-compose pull
@@ -445,13 +433,13 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ### Managing Networks and Volumes:
 
-13. **`docker-compose network ls`**: List networks.
+13. List networks.
 
     ```bash
     docker-compose network ls
     ```
 
-14. **`docker-compose volume ls`**: List volumes.
+14. List volumes.
 
     ```bash
     docker-compose volume ls
@@ -459,13 +447,13 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ### Other Commands:
 
-15. **`docker-compose config`**: Validate and view the compose file.
+15. Validate and view the compose file.
 
     ```bash
     docker-compose config
     ```
 
-16. **`docker-compose events`**: Receive real-time events from services.
+16. Receive real-time events from services.
 
     ```bash
     docker-compose events
@@ -477,28 +465,22 @@ These are some common Docker Compose commands, but there are more options and va
 ### Docker System Information:
 
 1. **`docker version`**
-   - Example: `docker version`
 
 2. **`docker info`**
-   - Example: `docker info`
 
 ### Docker System Management:
 
 3. **`docker system df`**
-   - Example: `docker system df`
 
 4. **`docker system prune`**
-   - Example: `docker system prune`
    - This command can be used to remove unused data such as stopped containers, networks not used by any container, dangling images, and build cache.
 
 5. **`docker system prune -a`**
-   - Example: `docker system prune -a`
    - This variant of the `prune` command removes all unused containers, networks, and images not just dangling ones.
 
 ### Docker System Events:
 
 6. **`docker events`**
-   - Example: `docker events`
    - This command displays real-time events from the server.
 
 ### Docker System Shell Access:
@@ -510,13 +492,11 @@ These are some common Docker Compose commands, but there are more options and va
 ### Docker System Diagnostics:
 
 8. **`docker system diagnose`**
-   - Example: `docker system diagnose`
    - This command collects system information for Docker troubleshooting purposes.
 
 ### Docker System Cleanup:
 
 9. **`docker system prune --volumes`**
-   - Example: `docker system prune --volumes`
    - This variant of the `prune` command also removes volumes.
 
 These commands provide information about the Docker system, help manage resources, and perform various maintenance tasks. Always refer to the official Docker documentation for the most up-to-date information and additional details on each command: [Docker CLI documentation](https://docs.docker.com/engine/reference/commandline/).
@@ -750,3 +730,27 @@ To leave the Swarm on a node:
 ```bash
 docker swarm leave
 ```
+# Q/A
+    If we want to create a Docker image without using a specific base image but include Node.js and npm, you would need to manually provide the necessary files. 
+    
+    Here's a basic example :
+
+    
+    Dockerfile
+    ```Dockerfile
+    # Start from scratch (empty base image)
+    FROM scratch
+    
+    # Add Node.js binary and npm binary
+    ADD node-v14.17.5-linux-x64.tar.xz /
+    ADD npm-v6.14.14.tar.xz /
+    
+    # Add your Node.js application file
+    ADD app.js /
+    
+    # Set the default command to run your application
+    CMD ["/node-v14.17.5-linux-x64/bin/node", "/app.js"]
+    
+    ```
+
+    We need to manually download the Node.js and npm binaries for the desired version from the official Node.js website 
