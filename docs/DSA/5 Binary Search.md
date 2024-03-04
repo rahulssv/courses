@@ -185,8 +185,7 @@ class TimeMap {
  */
 ```
 
-### [Median
-of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+### [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
 ```java
 /*Brute-force solution (Linear)*/
