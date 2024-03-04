@@ -38,9 +38,11 @@ theme:
     - search.share
     - content.code.copy
     - content.code.annotate
+    
 plugins:
   - search
   - open-in-new-tab
+  
 markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
