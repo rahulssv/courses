@@ -1,8 +1,8 @@
-# 2-D Dynamic Programming
+# 14. 2-D Dynamic Programming
 
 ### [Unique Paths](https://leetcode.com/problems/unique-paths/)
 
-### **Recursion**
+**Recursion**
 
 Check out the comments.
 
@@ -36,7 +36,7 @@ Recurrence Tree for complexity analysis:
 
 ![https://bloggg-1254259681.cos.na-siliconvalley.myqcloud.com/8pax9.jpg](https://bloggg-1254259681.cos.na-siliconvalley.myqcloud.com/8pax9.jpg)
 
-### **DP (Top-down with Memoization)**
+**DP (Top-down with Memoization)**
 
 Use an 2D array `mem` to do memoization.
 
@@ -70,7 +70,7 @@ private int numPaths(int i, int j, int[][] mem) {
 
 ![https://bloggg-1254259681.cos.na-siliconvalley.myqcloud.com/fbu40.jpg](https://bloggg-1254259681.cos.na-siliconvalley.myqcloud.com/fbu40.jpg)
 
-### **DP (Bottom-up)**
+**DP (Bottom-up)**
 
 ![https://bloggg-1254259681.cos.na-siliconvalley.myqcloud.com/bckom.png](https://bloggg-1254259681.cos.na-siliconvalley.myqcloud.com/bckom.png)
 
@@ -97,7 +97,7 @@ public int uniquePaths(int m, int n) {
 
 **Space:** `O(MN)`
 
-### **DP (Bottom-up, Linear Space)**
+**DP (Bottom-up, Linear Space)**
 
 Reduce the O(MN)O(MN)*O*(*MN*) space complexity to O(N)O(N)*O*(*N*) (a row) or O(M)O(M)*O*(*M*) (a column). In terms of a row, we would update `dp[j]` by its old value plus `dp[j - 1]`.
 
@@ -127,7 +127,7 @@ public int uniquePaths(int m, int n) {
 
 ### [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 
-## **Brute Force**
+**Brute Force**
 
 ```java
 class Solution {
@@ -149,7 +149,7 @@ class Solution {
 }
 ```
 
-## **Top-down DP**
+**Top-down DP**
 
 We might use memoization to overcome overlapping subproblems.
 
@@ -181,7 +181,7 @@ class Solution {
 }
 ```
 
-## **Bottom-up DP**
+**Bottom-up DP**
 
 For every `i` in text1, `j` in text2, we will choose one of the following two options:
 
@@ -476,7 +476,7 @@ public class Solution {
 
 ### [Interleaving String](https://leetcode.com/problems/interleaving-string/)
 
-## **BFS solution (6ms)**
+**BFS solution (6ms)**
 
 Imagine a grid, which x-axis and y-axis are s1 and s2, matching s3 is the same as
 
@@ -525,7 +525,7 @@ public class Solution {
 }
 ```
 
-## **DFS solution with memorization (2ms)**
+**DFS solution with memorization (2ms)**
 
 This looks slow but is actually faster than BFS! Think about it carefully, in this
 
@@ -570,7 +570,7 @@ public class Solution {
 }
 ```
 
-## **2d DP solution (6ms)**
+**2d DP solution (6ms)**
 
 It's an interesting practice. There are further optimization could be done to
 

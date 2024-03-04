@@ -1,4 +1,4 @@
-# Advanced Graphs
+# 12. Advanced Graphs
 
 ### [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
 
@@ -131,15 +131,7 @@ class Solution {
 
 ### [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
 
-```java
-
-```
-
-### [foreign-dictionary](https://neetcode.io/problems/foreign-dictionary)
-
-```java
-
-```
+### F[oreign Dictionary](https://neetcode.io/problems/foreign-dictionary)
 
 ### [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
 

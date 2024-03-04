@@ -1,4 +1,4 @@
-# Math & Geometry
+# 17. Math & Geometry
 
 ### [Rotate Image](https://leetcode.com/problems/rotate-image/)
 
@@ -123,22 +123,22 @@ public void setZeroes(int[][] matrix) {
 
 ### [Happy Number](https://leetcode.com/problems/happy-number/)
 
-# **Intuition**
+**Intuition**
 
 Floyd's tortoise and hare method will be used, because this has something to do with a cycle.
 
-# **Approach**
+**Approach**
 
 ![https://assets.leetcode.com/users/images/cbb5d508-9f76-4978-a0b0-39a58db84874_1689407129.0284407.jpeg](https://assets.leetcode.com/users/images/cbb5d508-9f76-4978-a0b0-39a58db84874_1689407129.0284407.jpeg)
 
 ![https://assets.leetcode.com/users/images/c3fa1061-5ed9-44b7-9aaf-e470a7caedc9_1689407136.7923284.jpeg](https://assets.leetcode.com/users/images/c3fa1061-5ed9-44b7-9aaf-e470a7caedc9_1689407136.7923284.jpeg)
 
-# **Complexity**
+**Complexity**
 
 - Time complexity: O(N)
 - Space complexity: O(1)
 
-# **Code**
+**Code**
 
 ```java
 import java.util.LinkedList;
@@ -204,7 +204,7 @@ public int[] plusOne(int[] digits) {
 
 ### [Pow(x, n)](https://leetcode.com/problems/powx-n/)
 
-## **1. nest myPow**
+**1. nest myPow**
 
 ---
 
@@ -218,7 +218,7 @@ double myPow(double x, int n) {
 }
 ```
 
-## **2. double myPow**
+**2. double myPow**
 
 ```java
 double myPow(double x, int n) { 
@@ -229,7 +229,7 @@ double myPow(double x, int n) {
 }
 ```
 
-## **3. double x**
+**3. double x**
 
 ```java
 double myPow(double x, int n) { 
@@ -242,7 +242,7 @@ double myPow(double x, int n) {
 }
 ```
 
-## **4. iterative one**
+**4. iterative one**
 
 ```java
 double myPow(double x, int n) { 

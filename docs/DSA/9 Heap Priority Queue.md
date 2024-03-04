@@ -1,4 +1,4 @@
-# Heap / Priority Queue
+# 9. Heap / Priority Queue
 
 ### [Kth Largest Element In a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
 

@@ -1,4 +1,4 @@
-# Greedy
+# 15. Greedy
 
 ### [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 

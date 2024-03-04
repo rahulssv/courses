@@ -1,4 +1,4 @@
-# Linked List
+# 6. Linked List
 
 ### [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 

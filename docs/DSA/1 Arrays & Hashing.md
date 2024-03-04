@@ -1,4 +1,4 @@
-# Arrays & Hashing
+# 1. Arrays & Hashing
 
 ### [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 

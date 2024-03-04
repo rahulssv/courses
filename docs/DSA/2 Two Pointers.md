@@ -1,4 +1,4 @@
-# Two Pointers
+# 2. Two Pointers
 
 ### [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 

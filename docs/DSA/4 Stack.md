@@ -1,4 +1,4 @@
-# Stack
+# 4. Stack
 
 ### [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 

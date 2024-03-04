@@ -1,4 +1,4 @@
-# Graph
+# 11. Graph
 
 ### [Number of Islands](https://leetcode.com/problems/number-of-islands/)
 
@@ -315,15 +315,7 @@ class Solution {
 
 ### [Walls And Gates](https://leetcode.com/problems/walls-and-gates/)
 
-```java
-
-```
-
 ### [Islands And Treasure](https://neetcode.io/problems/islands-and-treasure)
-
-```java
-
-```
 
 ### [Course Schedule](https://leetcode.com/problems/course-schedule/)
 
@@ -437,27 +429,11 @@ public int[] findRedundantConnection(int[][] edges) {
 
 ### [Number of Connected Components In An Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
 
-```java
-
-```
-
 ### [count-connected-components](https://neetcode.io/problems/count-connected-components)
-
-```java
-
-```
 
 ### [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
 
-```java
-
-```
-
-### [valid-tree](https://neetcode.io/problems/valid-tree)
-
-```java
-
-```
+### V[alid Tree](https://neetcode.io/problems/valid-tree)
 
 ### [Word Ladder](https://leetcode.com/problems/word-ladder/)
 

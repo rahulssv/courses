@@ -1,4 +1,4 @@
-# Intervals
+# 16. Intervals
 
 ### [Insert Interval](https://leetcode.com/problems/insert-interval/)
 
@@ -101,27 +101,11 @@ Sorting Interval.end in ascending order is O(nlogn), then traverse intervals arr
 
 ### [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)
 
-```java
-
-```
-
-### M[eeting Schedule](https://neetcode.io/problems/meeting-schedule)
-
-```java
-
-```
+### [Meeting Schedule](https://neetcode.io/problems/meeting-schedule)
 
 ### [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
 
-```java
-
-```
-
-### M[eeting Schedule](https://neetcode.io/problems/meeting-schedule-ii) II
-
-```java
-
-```
+### [Meeting Schedule II](https://neetcode.io/problems/meeting-schedule-ii)
 
 ### [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/)
 
@@ -141,15 +125,13 @@ In the priority, we use
 
 The head of the queue is the smallest interval we want to return for each query.
 
-# **Complexity**
+**Complexity**
 
 Time `O(nlogn + qlogq)`
 
 Space `O(n+q)`
 
 where `q = queries.size()`
-
-**Java**
 
 Using TreeMap
 

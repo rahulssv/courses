@@ -1,4 +1,4 @@
-# Sliding Window
+# 3. Sliding Window
 
 ### [Best Time to Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 

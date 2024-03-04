@@ -1,4 +1,4 @@
-# Trees
+# 7. Trees
 
 ### [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 
